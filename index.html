@@ -1,37 +1,17 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Language" content="en, es">
 	<title>¡Sunset Spark!</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<!-- 1140px Grid styles for IE -->
+	<!-- CSS loads -->
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
-
-	<!-- The 1140px Grid - http://cssgrid.net/ -->
 	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
-
-	<!-- site styles -->
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
 
-	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<!-- Javascript loads -->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-34228211-1']);
-	  _gaq.push(['_setDomainName', 'sunsetspark.org']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
 </head>
 
 <body>
@@ -57,16 +37,19 @@
 				<p>Do you like making things? At Sunset Spark, we like helping
 					people make new things, especially with technology. We've been offering free
 					classes like robotics, computer programming and 3D printing to kids in borrowed
-					spaces like schools and parks since 2008. We hope to open a permanent location
-					soon to offer free weekly classes to kids and teenagers in the neighborhood.
+					spaces like schools and parks since 2008. We're working toward opening a
+					permanent location in the neighborhood soon to build a community of inventors,
+					designers, scientists and lifelong learners.
 				</p>
 			</div>
 			<div lang="es" class="sixcol last">
 				<p>¿Le gusta hacer cosas? En Sunset Spark nos gusta ayudar a la gente hacer cosas nuevas,
 					especialmente con tecnología. Hemos estado ofreciendo clases gratis como robótica,
 					programación informática y la impresión de 3D a los niños en espacios prestados
-					como escuelas y parques desde 2008. Esperamos abrir una ubicación permanente para
-					ofrecer clases gratuitas semanales a los niños y adolescentes en el barrio.</p>
+					como escuelas y parques desde 2008. Esperamos abrir un lugar permanente en el
+					vecindario para anima una comunidad de inventores, diseñadores, científicos y
+					estudiantes por la vida.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -88,11 +71,39 @@
 		</div>
 	</div>
 
+	<!-- Donate -->
+	<div class="container" id="donate">
+		<form>
+			<script
+				src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+				data-key="pk_test_cO0uHeyyt16m4t4mwdTb6j7A"
+				data-label="Donate Today"
+				data-currency="usd"
+				data-panel-label="Donate"
+				data-address=true
+				data-name="Sunset Spark"
+				data-description="A Very Kind Donation">
+			</script>
+		</form>
+	</div>
+
 	<!-- Footer -->
 	<div class="container" id="footer">
 		<div class="row border midLiner">
 		</div>
 	</div>
 
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34228211-1']);
+	  _gaq.push(['_setDomainName', 'sunsetspark.org']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </body>
 </html>
