@@ -1,0 +1,41 @@
+mixin course_block(course)
+    .large-6.columns
+        .overlap
+            .overlap-dl
+                .show-for-large-up
+                    dl.tabs(data-tab)
+                        dd.tab-en
+                            a(href="##{course.id}-en"): h4= course.title.en
+                        dd.tab-es
+                            a(href="##{course.id}-es"): h4= course.title.es
+                .show-for-medium-only
+                    dl.tabs(data-tab)
+                        dd.tab-en
+                            a(href="##{course.id}-en"): h2= course.title.en
+                        dd.tab-es
+                            a(href="##{course.id}-es"): h2= course.title.es
+                .show-for-small-only
+                    dl.tabs(data-tab)
+                        dd.tab-en
+                            a(href="##{course.id}-en"): h3= course.title.en
+                        dd.tab-es
+                            a(href="##{course.id}-es"): h3= course.title.es
+            .show-for-large-up
+                img(src="http://placehold.it/500x312&text=Large")
+            .show-for-medium-only
+                img(src="http://placehold.it/970x606&text=Medium")
+            .show-for-small-only
+                img(src="http://placehold.it/610x380&text=Small")
+        .tabs-content
+            .content(id="#{course.id}-en")
+                .panel
+                    p= course.description.en
+                    a.large.signup-button-med.expand(href="#").
+                        Sign Up Now
+            .content(id="#{course.id}-es")
+                .panel
+                    p= course.description.es
+                    a.large.signup-button-med.expand(href="#").
+                        Inscribirse Ahora
+            .content.active.spacing
+                .panel

@@ -1,0 +1,132 @@
+@import "settings";
+
+$include-open-sans: false;
+
+$logo-yellow: rgb(239, 218, 89);
+$logo-red: rgb(218, 130, 101);
+$logo-blue: rgb(99, 93, 221);
+$logo-white: rgb(231, 233, 227);
+
+$body-font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: $body-font-family;
+
+$panel-font-color: $logo-white;
+$header-font-color: $logo-white;
+$body-bg: $logo-white;
+$panel-bg: $logo-blue;
+$panel-border-size: 0px;
+
+// $tabs-navigation-padding: rem-calc(24);
+$tabs-navigation-bg-color: darken($logo-blue, 5%);
+$tabs-navigation-hover-bg-color: $logo-blue;
+$tabs-navigation-font-color: $logo-white;
+$tabs-navigation-font-size: rem-calc(16);
+// $tabs-navigation-font-family: $body-font-family;
+
+$tabs-content-margin-bottom: rem-calc(24);
+$tabs-content-padding: 1px;
+
+@import "foundation";
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1px;
+}
+
+p {
+    font-weight: 300;
+    letter-spacing: 0.75px;
+}
+
+.signup-button-lrg {
+    @include button($padding: $button-lrg, $bg: $logo-red, $full-width: true);
+}
+
+.signup-button-med {
+    @include button($padding: $button-med, $bg: $logo-red, $full-width: true);
+}
+
+.signup-button-sml {
+    @include button($padding: $button-sml, $bg: $logo-red, $full-width: true);
+}
+
+.header-sml {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.overlap {
+    position: relative;
+}
+
+.overlap-dl {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+// Hard override Foundation active tab background``
+.tabs {
+    dd {
+        > a {
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        &.active a {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            background: $logo-blue;
+        }
+        &:last-child {
+            float: right;
+        }
+    }
+
+    .tab-en {
+        // float: left;
+        // text-align: left;
+        min-width: 60%;
+    }
+
+    .tab-es {
+        // float: right;
+        // text-align: right;
+        min-width: 70%;
+    }
+
+}
+
+.tabs-content {
+    margin-top: -1px;
+    .spacing {
+        .panel {
+            padding: 0;
+        }
+    }
+}
+
+
+// .tabs {
+//     background: $logo-blue;
+//     margin-top: -1px;
+//     dd {
+//         > a {
+//             padding: 8px 20px;
+//         }
+//         &.active a {
+//             padding: 8px 20px;
+//             background: $logo-blue;
+//         }
+//     }
+
+//     .tab-en {
+//         vertical-align: bottom;
+//         float: left;
+//         width: 50%;
+//     }
+//     .tab-es {
+//         vertical-align: bottom;
+//         float: right;
+//         text-align: right;
+//         width: 50%;
+//     }
+// }

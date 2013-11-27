@@ -1,0 +1,62 @@
+[
+    {
+        "description": {
+            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+        },
+        "start_slug": {
+            "en": "",
+            "es": ""
+        },
+        "id": "BAB001",
+        "title": {
+            "en": "Brains and Babies",
+            "es": "Cerebros y Beb\u00e9s"
+        }
+    },
+    {
+        "description": {
+            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+        },
+        "start_slug": {
+            "en": "",
+            "es": ""
+        },
+        "id": "PFL001",
+        "title": {
+            "en": "Programming for Life",
+            "es": "Programaci\u00f3n para la Vida"
+        }
+    },
+    {
+        "description": {
+            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+        },
+        "start_slug": {
+            "en": "",
+            "es": ""
+        },
+        "id": "RMP001",
+        "title": {
+            "en": "Robot Monster Party",
+            "es": "Partido del Monstruo Robot"
+        }
+    },
+    {
+        "description": {
+            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+        },
+        "start_slug": {
+            "en": "",
+            "es": ""
+        },
+        "id": "CFD001",
+        "title": {
+            "en": "Computing for Dancers",
+            "es": "Inform\u00e1tica para los Bailarines"
+        }
+    }
+]

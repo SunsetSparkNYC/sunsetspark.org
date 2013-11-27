@@ -1,0 +1,6 @@
+{
+  "name": "sunsetspark.org",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}

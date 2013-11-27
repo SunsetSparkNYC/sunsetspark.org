@@ -1,0 +1,147 @@
+include includes/mixins
+
+doctype 5
+html.no-js(lang="en, es")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="Content-Language", content="en, es")
+        title ¡Sunset Spark!
+        link(rel="stylesheet", href="css/app.css")
+        script(src="bower_components/modernizr/modernizr.js")
+        script(type="text/javascript", src="//use.typekit.net/ris3wje.js")
+        script(type="text/javascript").
+            try{Typekit.load();}catch(e){}
+
+    body
+        br
+        .row
+            .large-12.columns
+                // Desktop Header
+                .hide-for-small
+                    img(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
+                        h1 ¡Sunset Spark!
+
+                // Mobile Header
+                .row
+                    .small-12.show-for-small.header-sml
+                        img(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
+                            h1 ¡Sunset Spark!
+        br
+
+        .row
+            .large-12.columns
+                .row
+                    // About
+                    .large-12.columns
+                        .panel.radius
+                            .row
+                                .large-6.small-6.columns
+                                    h4 Learning for Everyone
+                                    hr
+                                    p.
+                                        Become an inventor, designer, scientist and lifelong learners
+                                        today.
+                                    p.
+                                        Come build robots, learn about the brain, study the stars. We're
+                                        coming up with new classes for kids and adults every month.
+                                .large-6.small-6.columns
+                                    h4 Aprendizaje para Todos
+                                    hr
+                                    p.
+                                        This is a discription of the class. Aliquam at massa ipsum. Quisque
+                                        bibendum purus convallis nulla ultrices ultricies. Nullam aliquam,
+                                        mi eu aliquam tincidunt, purus velit laoreet tortor, viverra
+                                        pretium nisi quam vitae mi.
+                                    p.
+                                        This is a discription of the class. Suspendisse lectus leo,
+                                        consectetur in tempor sit amet, placerat quis neque. Etiam luctus
+                                        porttitor lorem, sed suscipit est rutrum non.
+
+        .row
+            .large-12.columns
+                // Class Offerings
+                .row
+                    mixin course_block(courses[0])
+                    mixin course_block(courses[1])
+                .row
+                    mixin course_block(courses[2])
+                    mixin course_block(courses[3])
+
+        .row
+            .large-12.columns
+                .row
+                    // More Classes
+                    .large-12.columns
+                        .panel.radius
+                            .row
+                                .large-6.small-6.columns
+                                    h4 More Classes Coming Soon
+                                    hr
+                                    h6.subheader.
+                                        There should something here about having more classes. We're
+                                        constantly thinking up new classes. If there's something you
+                                        want to learn, we'd love to hear from you.  Send us a note.
+
+                                .large-6.small-6.columns
+                                    h4 Más Clases Próximamente
+                                    hr
+                                    h6.subheader.
+                                        Aliquam at massa ipsum. Quisque bibendum purus convallis
+                                        nulla ultrices ultricies. Nullam aliquam, mi eu aliquam
+                                        tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.
+
+        .row
+            .large-12.columns
+                .row
+                    // Send Off
+                    .large-8.columns
+                        .panel.radius
+                            .row
+                                .large-6.small-6.columns
+                                    h4 Header
+                                    hr
+                                    h4.subheader.
+                                        Risus ligula, aliquam nec fermentum vitae, sollicitudin
+                                        eget urna. Donec dignissim nibh fermentum odio ornare
+                                        sagittis.
+
+                                    .show-for-small(align="center")
+                                        a.small.radius.signup-button-sml(href="#").
+                                            Call To Action!
+
+                                .large-6.small-6.columns
+                                    p.
+                                        Suspendisse ultrices ornare tempor. Aenean eget ultricies
+                                        libero. Phasellus non ipsum eros. Vivamus at dignissim
+                                        massa. Aenean dolor libero, blandit quis interdum et,
+                                        malesuada nec ligula. Nullam erat erat, eleifend sed
+                                        pulvinar ac. Suspendisse ultrices ornare tempor. Aenean
+                                        eget ultricies libero.
+
+                    .large-4.columns.hide-for-small
+                        .panel
+                            h4 Get In Touch!
+                            hr
+                            a.large.signup-button-lrg.expand(href="#").
+                                Call To Action!
+
+        // Footer
+        footer.row
+            .large-12.columns
+                hr
+
+        script(src="bower_components/jquery/jquery.min.js")
+        script(src="bower_components/foundation/js/foundation.min.js")
+        script(src="js/app.js")
+        script(type="text/javascript").
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-34228211-1']);
+            _gaq.push(['_setDomainName', 'sunsetspark.org']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
