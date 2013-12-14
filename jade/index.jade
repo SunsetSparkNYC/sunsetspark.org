@@ -17,16 +17,17 @@ html.no-js(lang="en, es")
         br
         .row
             .large-12.columns
-                // Desktop Header
-                .hide-for-small
-                    img(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
-                        h1 ¡Sunset Spark!
+                #top-logo
+                    // Desktop Header
+                    .hide-for-small
+                        img(src="img/logo.svg", width="960px", alt="¡Sunset Spark!")
+                            img(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
 
-                // Mobile Header
-                .row
-                    .small-12.show-for-small.header-sml
-                        img(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
-                            h1 ¡Sunset Spark!
+                    // Mobile Header
+                    .row
+                        .small-12.show-for-small.header-sml
+                            img(src="img/logo.svg", width="610px", alt="¡Sunset Spark!")
+                                img(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
         br
 
         .row
@@ -45,6 +46,15 @@ html.no-js(lang="en, es")
                                     p.
                                         Come build robots, learn about the brain, study the stars. We're
                                         coming up with new classes for kids and adults every month.
+
+                                    p.
+                                        Sunset Spark brings science back to the community. Everyone
+                                        can be a scientist, engineer, designer or innovator, and
+                                        . We
+                                        provide free classes for people of all ages and backgrounds
+                                        to learn about science, engineering, and mathematics in fun
+                                        and inventive ways.
+                                    p. In our classes, you won't be sitting behind a desk listening to a teacher for an hour.  We believe the best way to learn is by doing things.
                                 .large-6.small-6.columns
                                     h4 Aprendizaje para Todos
                                     hr
@@ -94,37 +104,87 @@ html.no-js(lang="en, es")
         .row
             .large-12.columns
                 .row
-                    // Send Off
-                    .large-8.columns
+                    // Send off - Contact
+                    .large-12.columns
                         .panel.radius
                             .row
                                 .large-6.small-6.columns
-                                    h4 Header
+                                    h4 Get In Touch
                                     hr
-                                    h4.subheader.
-                                        Risus ligula, aliquam nec fermentum vitae, sollicitudin
-                                        eget urna. Donec dignissim nibh fermentum odio ornare
-                                        sagittis.
-
-                                    .show-for-small(align="center")
-                                        a.small.radius.signup-button-sml(href="#").
-                                            Call To Action!
-
+                                    h6.subheader.
+                                        You should contact us if you have any questions or want to learn
+                                        something that isn't listed here
+                                    a.large.signup-button-med.expand(href="#", data-reveal-id="#contact-modal-es").
+                                        Contact
                                 .large-6.small-6.columns
-                                    p.
-                                        Suspendisse ultrices ornare tempor. Aenean eget ultricies
-                                        libero. Phasellus non ipsum eros. Vivamus at dignissim
-                                        massa. Aenean dolor libero, blandit quis interdum et,
-                                        malesuada nec ligula. Nullam erat erat, eleifend sed
-                                        pulvinar ac. Suspendisse ultrices ornare tempor. Aenean
-                                        eget ultricies libero.
+                                    h4 Ponerse En Contacto
+                                    hr
+                                    h6.subheader.
+                                        Nullam aliquam, mi eu aliquam. Quisque bibendum purus convallis
+                                        nulla ultrices ultricies. Aliquam at massa ipsum aliquam
+                                        tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.
+                                    a.large.signup-button-med.expand(href="#", data-reveal-id="#contact-modal-es").
+                                        Contacto
 
-                    .large-4.columns.hide-for-small
-                        .panel
-                            h4 Get In Touch!
-                            hr
-                            a.large.signup-button-lrg.expand(href="#").
-                                Call To Action!
+        // Contact Form Modal
+        .reveal-modal(id="contact-modal-en", data-reveal)
+            .panel
+                h2 Send Us a Message
+                p.lead Lets do it. I'm in.
+                form
+                    .row
+                    .small-12
+                        .row
+                            .small-4.columns
+                                label.right.inline Name
+                            .small-8.columns
+                                input(type="text", name='name', placeholder="First and Last Name")
+                        .row
+                            .small-4.columns
+                                label.right.inline Email
+                            .small-8.columns
+                                input(type="text", name='email', placeholder="Email Address")
+                        .row
+                            .small-4.columns
+                                label.right.inline Phone Number
+                            .small-8.columns
+                                input(type="text", name='telephone', placeholder="Phone Number (Not required)")
+                        .row
+                            .small-4.columns
+                                label.right.inline Message
+                            .small-8.columns
+                                input(type="text", name='message', placeholder="")
+                        input(type="hidden", name='language', value="en")
+                a.close-reveal-modal &#215;
+        .reveal-modal(id="contact-modal-es", data-reveal)
+            .panel
+                h2 Envíenos un Mensaje
+                p.lead Lets do it. I'm in.
+                form
+                    .row
+                    .small-12
+                        .row
+                            .small-4.columns
+                                label.right.inline Nobmre
+                            .small-8.columns
+                                input(type="text", name='name', placeholder="Nombre y Apellido")
+                        .row
+                            .small-4.columns
+                                label.right.inline Email
+                            .small-8.columns
+                                input(type="text", name='email', placeholder="Correo Electrónico")
+                        .row
+                            .small-4.columns
+                                label.right.inline Tele Numbre
+                            .small-8.columns
+                                input(type="text", name='telephone', placeholder="Número de Teléfono (No se requiere)")
+                        .row
+                            .small-4.columns
+                                label.right.inline Mensaje
+                            .small-8.columns
+                                input(type="text", name='message', placeholder="")
+                        input(type="hidden", name='language', value="es")
+                a.close-reveal-modal &#215;
 
         // Footer
         footer.row

@@ -14,7 +14,7 @@ $panel-font-color: $logo-white;
 $header-font-color: $logo-white;
 $body-bg: $logo-white;
 $panel-bg: $logo-blue;
-$panel-border-size: 0px;
+$panel-border-size: 1px;
 
 // $tabs-navigation-padding: rem-calc(24);
 $tabs-navigation-bg-color: darken($logo-blue, 5%);
@@ -25,6 +25,9 @@ $tabs-navigation-font-size: rem-calc(16);
 
 $tabs-content-margin-bottom: rem-calc(24);
 $tabs-content-padding: 1px;
+
+$reveal-modal-bg: $logo-blue;
+$form-label-font-color: $logo-white;
 
 @import "foundation";
 
@@ -104,29 +107,21 @@ p {
     }
 }
 
+.reveal-modal .close-reveal-modal {
+    font-size: 22pt;
+    color: $logo-yellow;
+}
 
-// .tabs {
-//     background: $logo-blue;
-//     margin-top: -1px;
-//     dd {
-//         > a {
-//             padding: 8px 20px;
-//         }
-//         &.active a {
-//             padding: 8px 20px;
-//             background: $logo-blue;
-//         }
-//     }
+.reveal-modal {
+    .panel {
+        border: none;
+    }
+}
 
-//     .tab-en {
-//         vertical-align: bottom;
-//         float: left;
-//         width: 50%;
-//     }
-//     .tab-es {
-//         vertical-align: bottom;
-//         float: right;
-//         text-align: right;
-//         width: 50%;
-//     }
-// }
+#top-logo {
+    img {
+        font-size: 100pt;
+    }
+    text-align: center;
+    color: $logo-blue;
+}

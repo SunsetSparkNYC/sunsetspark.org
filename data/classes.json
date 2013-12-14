@@ -12,6 +12,14 @@
         "title": {
             "en": "Brains and Babies",
             "es": "Cerebros y Beb\u00e9s"
+        },
+        "pre_signup": {
+            "en": "Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.",
+            "es": "Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+        },
+        "post_signup": {
+            "en": "Thanks for signing up. S",
+            "es": "Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus at massa ipsum."
         }
     },
     {

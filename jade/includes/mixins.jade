@@ -1,3 +1,70 @@
+
+mixin course_signup_modal(course)
+    .reveal-modal(id="#{course.id}-modal-en", data-reveal)
+        .panel
+            h2 Sign Up for <strong>#{course.title.en}</strong>
+            p.lead Lets do it. I'm in.
+            form
+                .row
+                .small-12
+                    .row
+                        .small-4.columns
+                            label.right.inline Name
+                        .small-8.columns
+                            input(type="text", name='name', placeholder="First and Last Name")
+                    .row
+                        .small-4.columns
+                            label.right.inline Email
+                        .small-8.columns
+                            input(type="text", name='email', placeholder="Email Address")
+                    .row
+                        .small-4.columns
+                            label.right.inline Phone Number
+                        .small-8.columns
+                            input(type="text", name='telephone', placeholder="Phone Number (Not required)")
+                    input(type="hidden", name='language', value="en")
+            a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-post-modal-en").
+                Learn More
+            a.close-reveal-modal &#215;
+    .reveal-modal(id="#{course.id}-modal-es", data-reveal)
+        .panel
+            h2 Inscribirse en <strong>#{course.title.es}</strong>
+            p.lead Lets do it. I'm in.
+            form
+                .row
+                .small-12
+                    .row
+                        .small-4.columns
+                            label.right.inline Nobmre
+                        .small-8.columns
+                            input(type="text", name='name', placeholder="Nombre y Apellido")
+                    .row
+                        .small-4.columns
+                            label.right.inline Emailo
+                        .small-8.columns
+                            input(type="text", name='email', placeholder="Correo Electrónico")
+                    .row
+                        .small-4.columns
+                            label.right.inline Tele Numbre
+                        .small-8.columns
+                            input(type="text", name='telephone', placeholder="Número de Teléfono (No se requiere)")
+                    input(type="hidden", name='language', value="en")
+            a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-post-modal-es").
+                Aprenda Más
+            a.close-reveal-modal &#215;
+
+mixin course_postsignup_modal(course)
+    .reveal-modal(id="#{course.id}-post-modal-en", data-reveal)
+        .panel
+            h2 Great job signing up for <strong>#{course.title.en}</strong>
+            p.lead We'll contact you soon.
+            a.close-reveal-modal &#215;
+    .reveal-modal(id="#{course.id}-post-modal-es", data-reveal)
+        .panel
+            h2 Stupendous job signing up for <strong>#{course.title.es}</strong>
+            p.lead We'll contact you soon.
+            a.close-reveal-modal &#215;
+
 mixin course_block(course)
     .large-6.columns
         .overlap
@@ -30,12 +97,15 @@ mixin course_block(course)
             .content(id="#{course.id}-en")
                 .panel
                     p= course.description.en
-                    a.large.signup-button-med.expand(href="#").
+                    a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-modal-en").
                         Sign Up Now
             .content(id="#{course.id}-es")
                 .panel
                     p= course.description.es
-                    a.large.signup-button-med.expand(href="#").
+                    a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-modal-es").
                         Inscribirse Ahora
             .content.active.spacing
                 .panel
+
+        mixin course_signup_modal(course)
+        mixin course_postsignup_modal(course)
