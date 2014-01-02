@@ -16,92 +16,162 @@ html.no-js(lang="en, es")
     body
         br
         .row
-            .large-12.columns
+            .small-12.columns
                 #top-logo
                     // Desktop Header
                     .hide-for-small
-                        img(src="img/logo.svg", width="960px", alt="¡Sunset Spark!")
-                            img(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
+                        img.center(src="img/logo.svg", width="960px", alt="¡Sunset Spark!")
+                            img.center(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
 
                     // Mobile Header
                     .row
                         .small-12.show-for-small.header-sml
-                            img(src="img/logo.svg", width="610px", alt="¡Sunset Spark!")
-                                img(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
+                            img.center(src="img/logo.svg", width="610px", alt="¡Sunset Spark!")
+                                img.center(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
         br
 
         .row
-            .large-12.columns
+            .small-12.columns
+                img.dna-hr(src="img/dna.png")
+                br
+
+        .row
+            .small-12.columns
                 .row
                     // About
+                    .small-12.columns
+                        .panel.radius
+                            .row
+                                .small-6.columns
+                                    h2 Learning for Everyone
+                                    hr
+                                    p.
+                                        Become an engineer, scientist, inventor and lifelong
+                                        learner today.  Sunset Spark is a not-for-profit
+                                        hackerspace for the immigrant community of Sunset Park.
+                                        We offer free classes for kids and adults in a wide
+                                        variety of science and engineering subjects like
+                                        neuroscience, software engineering, and physical
+                                        computing.
+                                    p.
+                                        We work with our students to make sure the classes meet
+                                        their needs.  The best way to learn is to be engaged.
+                                        All our classes have hands-on projects, experiments or
+                                        immediate takeaways that will empower students of all ages
+                                        to learn more on their own and use their new knowledge in
+                                        the real world in creative and relevant ways.
+                                    p.
+                                        Our classes take place in borrow spaces like schools,
+                                        parks and offices around Sunset Park.  We don't have a
+                                        permanent home to call our own yet, but we're working
+                                        toward opening a permanent location in the neighborhood
+                                        soon to open up a technology workshop and offer more
+                                        science and engineering classes to the community.
+
+                                .small-6.columns
+                                    h2 Aprendizaje para Todos
+                                    hr
+                                    p.
+                                        Become an engineer, scientist, inventor and lifelong
+                                        learner today.  Sunset Spark is a not-for-profit
+                                        hackerspace for the immigrant community of Sunset Park.
+                                        We offer free classes for kids and adults in a wide
+                                        variety of science and engineering subjects like
+                                        neuroscience, software engineering, and physical
+                                        computing.
+                                    p.
+                                        We work with our students to make sure the classes meet
+                                        their needs.  The best way to learn is to be engaged.
+                                        All our classes have hands-on projects, experiments or
+                                        immediate takeaways that will empower students of all ages
+                                        to learn more on their own and use their new knowledge in
+                                        the real world in creative and relevant ways.
+                                    p.
+                                        Our classes take place in borrow spaces like schools,
+                                        parks and offices around Sunset Park.  We don't have a
+                                        permanent home to call our own yet, but we're working
+                                        toward opening a permanent location in the neighborhood
+                                        soon to open up a technology workshop and offer more
+                                        science and engineering classes to the community.
+        .row
+            .small-12.columns
+                img.dna-hr(src="img/dna.png")
+                br
+        .row#classes
+            .small-12.columns
+                .row
+                    // Classes
+                    .large-8.medium-8.small-12.columns
+                        .no-panel.radius
+                            .row
+                                .large-6.medium-6.columns
+                                    h2 Classes
+                                    h2.subheader.
+                                        Our free classes are open to all levels of learners. We
+                                        develop rich and innovative curricula that engage
+                                        students of all skills and backgrounds through hands-on
+                                        projects and relatable lessons. If there's a class you
+                                        like, contact us using the sign up button or send us an
+                                        <a href="mailto:contact@sunsetspark.org">email</a>.
+                                .large-6.medium-6.columns
+                                    h2 Saber
+                                    h2.subheader.
+                                        Our free classes are open to all levels of learners. We
+                                        develop rich and innovative curricula that engage
+                                        students of all skills and backgrounds through hands-on
+                                        projects and relatable lessons. If there's a class you
+                                        like, contact us using the sign up button or send us an
+                                        <a href="mailto:contact@sunsetspark.org">email</a>.
+                    .large-4.medium-4.small-10.small-centered.large-uncentered.medium-uncentered.columns
+                        img(src="img/cell.png")
+                        br
+                        br
+
+            .large-12.columns
+                .row
+                    mixin course_block(courses[0], 12)
+                br
+                .row
+                    mixin course_block(courses[1], 12)
+                br
+                .row
+                    mixin course_block(courses[2], 12)
+                br
+                .row
+                    mixin course_block(courses[3], 12)
+                br
+
+        .row
+            .large-12.columns
+                img.dna-hr(src="img/dna.png")
+                br
+
+        .row#more-classes
+            .large-12.columns
+                .row
                     .large-12.columns
                         .panel.radius
                             .row
                                 .large-6.small-6.columns
-                                    h4 Learning for Everyone
+                                    h2 More Classes Coming Soon
                                     hr
                                     p.
-                                        Become an inventor, designer, scientist and lifelong learners
-                                        today.
-                                    p.
-                                        Come build robots, learn about the brain, study the stars. We're
-                                        coming up with new classes for kids and adults every month.
-
-                                    p.
-                                        Sunset Spark brings science back to the community. Everyone
-                                        can be a scientist, engineer, designer or innovator, and
-                                        . We
-                                        provide free classes for people of all ages and backgrounds
-                                        to learn about science, engineering, and mathematics in fun
-                                        and inventive ways.
-                                    p. In our classes, you won't be sitting behind a desk listening to a teacher for an hour.  We believe the best way to learn is by doing things.
+                                        We're a small team of two and a half with a passion for
+                                        community science. New classes are being developed every
+                                        month. If there's a subject you'd like to learn, contact us
+                                        below. We'll work together with you to create a fun and
+                                        engaging class for you and everyone else in the community.
                                 .large-6.small-6.columns
-                                    h4 Aprendizaje para Todos
+                                    h2 Más Clases Próximamente
                                     hr
                                     p.
-                                        This is a discription of the class. Aliquam at massa ipsum. Quisque
-                                        bibendum purus convallis nulla ultrices ultricies. Nullam aliquam,
-                                        mi eu aliquam tincidunt, purus velit laoreet tortor, viverra
-                                        pretium nisi quam vitae mi.
-                                    p.
-                                        This is a discription of the class. Suspendisse lectus leo,
-                                        consectetur in tempor sit amet, placerat quis neque. Etiam luctus
-                                        porttitor lorem, sed suscipit est rutrum non.
+                                        We're a small team of two and a half with a passion for
+                                        community science. New classes are being developed every
+                                        month. If there's a subject you'd like to learn, contact us
+                                        below. We'll work together with you to create a fun and
+                                        engaging class for you and everyone else in the community.
 
-        .row
-            .large-12.columns
-                // Class Offerings
-                .row
-                    mixin course_block(courses[0])
-                    mixin course_block(courses[1])
-                .row
-                    mixin course_block(courses[2])
-                    mixin course_block(courses[3])
-
-        .row
-            .large-12.columns
-                .row
-                    // More Classes
-                    .large-12.columns
-                        .panel.radius
-                            .row
-                                .large-6.small-6.columns
-                                    h4 More Classes Coming Soon
-                                    hr
-                                    h6.subheader.
-                                        There should something here about having more classes. We're
-                                        constantly thinking up new classes. If there's something you
-                                        want to learn, we'd love to hear from you.  Send us a note.
-
-                                .large-6.small-6.columns
-                                    h4 Más Clases Próximamente
-                                    hr
-                                    h6.subheader.
-                                        Aliquam at massa ipsum. Quisque bibendum purus convallis
-                                        nulla ultrices ultricies. Nullam aliquam, mi eu aliquam
-                                        tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.
-
-        .row
+        .row#contact
             .large-12.columns
                 .row
                     // Send off - Contact
@@ -109,28 +179,30 @@ html.no-js(lang="en, es")
                         .panel.radius
                             .row
                                 .large-6.small-6.columns
-                                    h4 Get In Touch
+                                    h2 Get In Touch
                                     hr
-                                    h6.subheader.
-                                        You should contact us if you have any questions or want to learn
-                                        something that isn't listed here
-                                    a.large.signup-button-med.expand(href="#", data-reveal-id="#contact-modal-es").
-                                        Contact
+                                    p.
+                                        Questions, comments or have something you want to learn?
+                                        We'd love to hear from you! Contact us using the button below
+                                        or send us an <a href="mailto:contact@sunsetspark.org">email</a>.
                                 .large-6.small-6.columns
-                                    h4 Ponerse En Contacto
+                                    h2 Ponerse En Contacto
                                     hr
-                                    h6.subheader.
-                                        Nullam aliquam, mi eu aliquam. Quisque bibendum purus convallis
-                                        nulla ultrices ultricies. Aliquam at massa ipsum aliquam
-                                        tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.
-                                    a.large.signup-button-med.expand(href="#", data-reveal-id="#contact-modal-es").
-                                        Contacto
+                                    p.
+                                        ¿Preguntas, comentarios, o algun cosa que quiere aprender?
+                                        ¡Nos encantaría saber de usted! Contact us using the button below
+                                        or send us an <a href="mailto:contact@sunsetspark.org">email</a>.
+                            a.large.signup-button-lrg.expand(href="#", data-reveal-id="contact-modal-es").
+                                Contact - Contacto
 
         // Contact Form Modal
         .reveal-modal(id="contact-modal-en", data-reveal)
             .panel
                 h2 Send Us a Message
-                p.lead Lets do it. I'm in.
+                p.lead.
+                    We'd love to hear from you. When you send us your message,
+                    be sure to leave either your email address or phone number
+                    so that we have a way to contact you.
                 form
                     .row
                     .small-12
@@ -148,18 +220,21 @@ html.no-js(lang="en, es")
                             .small-4.columns
                                 label.right.inline Phone Number
                             .small-8.columns
-                                input(type="text", name='telephone', placeholder="Phone Number (Not required)")
+                                input(type="text", name='telephone', placeholder="Phone Number")
                         .row
                             .small-4.columns
                                 label.right.inline Message
                             .small-8.columns
-                                input(type="text", name='message', placeholder="")
+                                textarea(name='message', placeholder="")
                         input(type="hidden", name='language', value="en")
                 a.close-reveal-modal &#215;
         .reveal-modal(id="contact-modal-es", data-reveal)
             .panel
                 h2 Envíenos un Mensaje
-                p.lead Lets do it. I'm in.
+                p.lead.
+                    We'd love to hear from you. When you send us your message,
+                    be sure to leave either your email address or phone number
+                    so that we have a way to contact you.
                 form
                     .row
                     .small-12
@@ -177,12 +252,12 @@ html.no-js(lang="en, es")
                             .small-4.columns
                                 label.right.inline Tele Numbre
                             .small-8.columns
-                                input(type="text", name='telephone', placeholder="Número de Teléfono (No se requiere)")
+                                input(type="text", name='telephone', placeholder="Número de Teléfono")
                         .row
                             .small-4.columns
                                 label.right.inline Mensaje
                             .small-8.columns
-                                input(type="text", name='message', placeholder="")
+                                textarea(name='message', placeholder="")
                         input(type="hidden", name='language', value="es")
                 a.close-reveal-modal &#215;
 

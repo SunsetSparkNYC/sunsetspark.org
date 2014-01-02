@@ -1,8 +1,8 @@
 [
     {
         "description": {
-            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
-            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+            "en": "Study the neurological and cognitive development of babies from conception through early childhood. Are you a new or expecting mother? If so, this class is for you. We'll explore the growth of your child's brain starting from just a handful of cells all the way through to elementary school. You'll learn how babies learn, grow a better understanding of the cognitive stages of childhood, and discovered scientifically-backed ways to be a better parent.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi."
         },
         "start_slug": {
             "en": "",
@@ -24,23 +24,8 @@
     },
     {
         "description": {
-            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
-            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
-        },
-        "start_slug": {
-            "en": "",
-            "es": ""
-        },
-        "id": "PFL001",
-        "title": {
-            "en": "Programming for Life",
-            "es": "Programaci\u00f3n para la Vida"
-        }
-    },
-    {
-        "description": {
-            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
-            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+            "en": "Build a robot monster with Lego Mindstorms. This Sorry adults, this class is kids only.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi."
         },
         "start_slug": {
             "en": "",
@@ -54,8 +39,23 @@
     },
     {
         "description": {
-            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi.",
-            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+            "en": "Create experiments to study the brain using advanced brainwave recording equipment.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi."
+        },
+        "start_slug": {
+            "en": "",
+            "es": ""
+        },
+        "id": "BP001",
+        "title": {
+            "en": "Programming for the Brain",
+            "es": "Programaci\u00f3n para la Vida"
+        }
+    },
+    {
+        "description": {
+            "en": "This is a discription of the class. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. liquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi."
         },
         "start_slug": {
             "en": "",

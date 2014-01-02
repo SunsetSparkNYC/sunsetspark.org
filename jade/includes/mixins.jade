@@ -6,25 +6,25 @@ mixin course_signup_modal(course)
             p.lead Lets do it. I'm in.
             form
                 .row
-                .small-12
-                    .row
-                        .small-4.columns
-                            label.right.inline Name
-                        .small-8.columns
-                            input(type="text", name='name', placeholder="First and Last Name")
-                    .row
-                        .small-4.columns
-                            label.right.inline Email
-                        .small-8.columns
-                            input(type="text", name='email', placeholder="Email Address")
-                    .row
-                        .small-4.columns
-                            label.right.inline Phone Number
-                        .small-8.columns
-                            input(type="text", name='telephone', placeholder="Phone Number (Not required)")
-                    input(type="hidden", name='language', value="en")
-            a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-post-modal-en").
-                Learn More
+                    .small-12
+                        .row
+                            .small-4.columns
+                                label.right.inline Name
+                            .small-8.columns
+                                input(type="text", name='name', placeholder="First and Last Name")
+                        .row
+                            .small-4.columns
+                                label.right.inline Email
+                            .small-8.columns
+                                input(type="text", name='email', placeholder="Email Address")
+                        .row
+                            .small-4.columns
+                                label.right.inline Phone Number
+                            .small-8.columns
+                                input(type="text", name='telephone', placeholder="Phone Number (Not required)")
+                        input(type="hidden", name='language', value="en")
+                    a.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-post-modal-en").
+                        Learn More
             a.close-reveal-modal &#215;
     .reveal-modal(id="#{course.id}-modal-es", data-reveal)
         .panel
@@ -49,7 +49,7 @@ mixin course_signup_modal(course)
                         .small-8.columns
                             input(type="text", name='telephone', placeholder="Número de Teléfono (No se requiere)")
                     input(type="hidden", name='language', value="en")
-            a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-post-modal-es").
+            a.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-post-modal-es").
                 Aprenda Más
             a.close-reveal-modal &#215;
 
@@ -65,47 +65,34 @@ mixin course_postsignup_modal(course)
             p.lead We'll contact you soon.
             a.close-reveal-modal &#215;
 
-mixin course_block(course)
-    .large-6.columns
-        .overlap
-            .overlap-dl
-                .show-for-large-up
-                    dl.tabs(data-tab)
-                        dd.tab-en
-                            a(href="##{course.id}-en"): h4= course.title.en
-                        dd.tab-es
-                            a(href="##{course.id}-es"): h4= course.title.es
-                .show-for-medium-only
-                    dl.tabs(data-tab)
-                        dd.tab-en
-                            a(href="##{course.id}-en"): h2= course.title.en
-                        dd.tab-es
-                            a(href="##{course.id}-es"): h2= course.title.es
-                .show-for-small-only
-                    dl.tabs(data-tab)
-                        dd.tab-en
-                            a(href="##{course.id}-en"): h3= course.title.en
-                        dd.tab-es
-                            a(href="##{course.id}-es"): h3= course.title.es
-            .show-for-large-up
-                img(src="http://placehold.it/500x312&text=Large")
-            .show-for-medium-only
-                img(src="http://placehold.it/970x606&text=Medium")
-            .show-for-small-only
-                img(src="http://placehold.it/610x380&text=Small")
+mixin course_block(course, cols)
+    .columns(class="medium-#{cols}")
+        dl.tabs.class-titles(data-tab)
+            dd.tab-en
+                a(href="##{course.id}-en"): h3= course.title.en
+            dd.tab-es
+                a(href="##{course.id}-es"): h3= course.title.es
         .tabs-content
             .content(id="#{course.id}-en")
-                .panel
-                    p= course.description.en
-                    a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-modal-en").
-                        Sign Up Now
+                .panel.class-desc
+                    .row
+                        .columns(class="medium-#{cols / 2}")
+                            p= course.description.en
+                        .columns(class="medium-#{cols / 2}")
+                            img(src="http://www.placehold.it/465x262")
+                    .row
+                        a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-en").
+                            Sign Up Now
             .content(id="#{course.id}-es")
-                .panel
-                    p= course.description.es
-                    a.large.signup-button-med.expand(href="#", data-reveal-id="#{course.id}-modal-es").
-                        Inscribirse Ahora
-            .content.active.spacing
-                .panel
+                .panel.class-desc
+                    .row
+                        .columns(class="medium-#{cols / 2}")
+                            p= course.description.es
+                        .columns(class="medium-#{cols / 2}")
+                            img(src="http://www.placehold.it/465x262")
+                    .row
+                        a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-es").
+                            Inscribirse Ahora
 
         mixin course_signup_modal(course)
         mixin course_postsignup_modal(course)
