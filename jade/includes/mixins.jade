@@ -3,25 +3,25 @@ mixin course_signup_modal(course)
     .reveal-modal(id="#{course.id}-modal-en", data-reveal)
         .panel
             h2 Sign Up for <strong>#{course.title.en}</strong>
-            p.lead Lets do it. I'm in.
+            p.lead #{course.pre_signup.en}
             form
                 .row
                     .small-12
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Name
-                            .small-8.columns
+                            .medium-9.columns
                                 input(type="text", name='name', placeholder="First and Last Name")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Email
-                            .small-8.columns
-                                input(type="text", name='email', placeholder="Email Address")
+                            .medium-9.columns
+                                input(type="text", name='email', placeholder="Email Address (or phone number below)")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Phone Number
-                            .small-8.columns
-                                input(type="text", name='telephone', placeholder="Phone Number (Not required)")
+                            .medium-9.columns
+                                input(type="text", name='telephone', placeholder="Phone Number (or email address above)")
                         input(type="hidden", name='language', value="en")
                     a.signup-button-med.center.expand(href="#", data-reveal-id="#{course.id}-post-modal-en").
                         Learn More
@@ -29,25 +29,25 @@ mixin course_signup_modal(course)
     .reveal-modal(id="#{course.id}-modal-es", data-reveal)
         .panel
             h2 Inscribirse en <strong>#{course.title.es}</strong>
-            p.lead Lets do it. I'm in.
+            p.lead #{course.pre_signup.es}
             form
                 .row
                     .small-12
                         .row
-                            .small-4.columns
-                                label.right.inline Nobmre
-                            .small-8.columns
+                            .medium-3.columns
+                                label.right.inline Nombre
+                            .medium-9.columns
                                 input(type="text", name='name', placeholder="Nombre y Apellido")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Emailo
-                            .small-8.columns
-                                input(type="text", name='email', placeholder="Correo Electrónico")
+                            .medium-9.columns
+                                input(type="text", name='email', placeholder="Correo Electrónico (o número de teléfono abajo)")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Tele Numbre
-                            .small-8.columns
-                                input(type="text", name='telephone', placeholder="Número de Teléfono (No se requiere)")
+                            .medium-9.columns
+                                input(type="text", name='telephone', placeholder="Número de Teléfono (o correo electrónico por encima)")
                         input(type="hidden", name='language', value="en")
                 a.signup-button-med.center.expand(href="#", data-reveal-id="#{course.id}-post-modal-es").
                     Aprenda Más
@@ -56,13 +56,15 @@ mixin course_signup_modal(course)
 mixin course_postsignup_modal(course)
     .reveal-modal(id="#{course.id}-post-modal-en", data-reveal)
         .panel
-            h2 Great job signing up for <strong>#{course.title.en}</strong>
-            p.lead We'll contact you soon.
+            h2 <strong>#{course.title.en}</strong>
+            p.lead #{course.post_signup.en}
+            p We'll contact you soon with more details.
             a.close-reveal-modal &#215;
     .reveal-modal(id="#{course.id}-post-modal-es", data-reveal)
         .panel
-            h2 Stupendous job signing up for <strong>#{course.title.es}</strong>
-            p.lead We'll contact you soon.
+            h2 <strong>#{course.title.es}</strong>
+            p.lead #{course.post_signup.es}
+            p Nos pondremos en contacto con te en breve con más detalles.
             a.close-reveal-modal &#215;
 
 mixin course_block(course, cols)

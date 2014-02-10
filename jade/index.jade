@@ -8,7 +8,7 @@ html.no-js(lang="en, es")
         meta(http-equiv="Content-Language", content="en, es")
         title ¡Sunset Spark!
         link(rel="stylesheet", href="css/app.css")
-        script(src="bower_components/modernizr/modernizr.js")
+        script(type="text/javascript", src="bower_components/modernizr/modernizr.js")
         script(type="text/javascript", src="//use.typekit.net/ris3wje.js")
         script(type="text/javascript").
             try{Typekit.load();}catch(e){}
@@ -55,9 +55,9 @@ html.no-js(lang="en, es")
                                         engineering, and physical computing.
                                     p.
                                         <strong>21st century skills for 21st century dreams.</strong>
-                                        We work with our students to make sure the classes meet
-                                        their needs and goals. The best way to learn is to be engaged
-                                        in life. All our classes incorporate hands-on projects,
+                                        The best way to learn is to be engaged in the lesson, so we
+                                        work with our students to make sure the classes meet their
+                                        needs and goals. All our classes incorporate hands-on projects,
                                         experiments, skills and knowledge that will immediately
                                         empower students of all ages to learn more on their own
                                         and use their new knowledge in the real world in creative
@@ -84,9 +84,9 @@ html.no-js(lang="en, es")
                                         engineering, and physical computing.
                                     p.
                                         <strong>21st century skills for 21st century dreams.</strong>
-                                        We work with our students to make sure the classes meet
-                                        their needs and goals. The best way to learn is to be engaged
-                                        in life. All our classes incorporate hands-on projects,
+                                        The best way to learn is to be engaged in the lesson, so we
+                                        work with our students to make sure the classes meet their
+                                        needs and goals. All our classes incorporate hands-on projects,
                                         experiments, skills and knowledge that will immediately
                                         empower students of all ages to learn more on their own
                                         and use their new knowledge in the real world in creative
@@ -113,8 +113,8 @@ html.no-js(lang="en, es")
                                 .large-6.medium-6.columns
                                     h2 Classes
                                     h2.subheader.
-                                        Our free classes are open to all levels of learners. We
-                                        develop rich and innovative curricula that engage
+                                        Our free classes are open to <strong>all levels of learners</strong>.
+                                        We develop rich and innovative curricula that engage
                                         students of all skills and backgrounds through hands-on
                                         projects and relatable lessons. If there's a class you want
                                         to take, contact us using the sign up button or send us an
@@ -191,7 +191,7 @@ html.no-js(lang="en, es")
                                         Questions, comments or have something you want to learn?
                                         We'd love to hear from you! Contact us using the button below
                                         or send us an <a href="mailto:contact@sunsetspark.org">email</a>.
-                                    a.signup-button-lrg.expand(href="#", data-reveal-id="contact-modal-es").
+                                    a.signup-button-lrg.expand(href="#", data-reveal-id="contact-modal-en").
                                         Contact
                                 .large-6.medium-6.columns
                                     h2 Ponerse En Contacto
@@ -215,27 +215,31 @@ html.no-js(lang="en, es")
                     .row
                     .small-12
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Name
-                            .small-8.columns
+                            .medium-9.columns
                                 input(type="text", name='name', placeholder="First and Last Name")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Email
-                            .small-8.columns
+                            .medium-9.columns
                                 input(type="text", name='email', placeholder="Email Address")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Phone Number
-                            .small-8.columns
+                            .medium-9.columns
                                 input(type="text", name='telephone', placeholder="Phone Number")
                         .row
-                            .small-4.columns
+                            .medium-3.columns
                                 label.right.inline Message
-                            .small-8.columns
+                            .medium-9.columns
                                 textarea(name='message', placeholder="")
                         input(type="hidden", name='language', value="en")
+                    .row
+                        a.signup-button-med.center(href="#", data-reveal-id="contact-post-modal-en").
+                            Send Message
                 a.close-reveal-modal &#215;
+
         .reveal-modal(id="contact-modal-es", data-reveal)
             .panel
                 h2 Envíenos un Mensaje
@@ -245,46 +249,61 @@ html.no-js(lang="en, es")
                     so that we have a way to contact you.
                 form
                     .row
-                    .small-12
-                        .row
-                            .small-4.columns
-                                label.right.inline Nobmre
-                            .small-8.columns
-                                input(type="text", name='name', placeholder="Nombre y Apellido")
-                        .row
-                            .small-4.columns
-                                label.right.inline Email
-                            .small-8.columns
-                                input(type="text", name='email', placeholder="Correo Electrónico")
-                        .row
-                            .small-4.columns
-                                label.right.inline Tele Numbre
-                            .small-8.columns
-                                input(type="text", name='telephone', placeholder="Número de Teléfono")
-                        .row
-                            .small-4.columns
-                                label.right.inline Mensaje
-                            .small-8.columns
-                                textarea(name='message', placeholder="")
-                        input(type="hidden", name='language', value="es")
+                        .small-12
+                            .row
+                                .medium-3.columns
+                                    label.right.inline Nombre
+                                .medium-9.columns
+                                    input(type="text", name='name', placeholder="Nombre y Apellido")
+                            .row
+                                .medium-3.columns
+                                    label.right.inline Email
+                                .medium-9.columns
+                                    input(type="text", name='email', placeholder="Correo Electrónico (o número de teléfono abajo)")
+                            .row
+                                .medium-3.columns
+                                    label.right.inline Tele Numbre
+                                .medium-9.columns
+                                    input(type="text", name='telephone', placeholder="Número de Teléfono (o correo electrónico por encima)")
+                            .row
+                                .medium-3.columns
+                                    label.right.inline Mensaje
+                                .medium-9.columns
+                                    textarea(name='message', placeholder="")
+                            input(type="hidden", name='language', value="es")
+                    .row
+                        a.signup-button-med.center(href="#", data-reveal-id="contact-post-modal-es").
+                            Send Message
+                a.close-reveal-modal &#215;
+
+        .reveal-modal(id="contact-post-modal-en", data-reveal)
+            .panel
+                h2 Thanks for contacting us.
+                p.lead We'll contact you soon.
+                a.close-reveal-modal &#215;
+
+        .reveal-modal(id="contact-post-modal-es", data-reveal)
+            .panel
+                h2 Thanks for contacting us.
+                p.lead We'll contact you soon.
                 a.close-reveal-modal &#215;
 
         // Footer
         footer.row
             .large-12.columns
                 hr
+                //- .row
+                //-     .large-6.columns
+                //-         p © 2012-2014 Sunset Spark
+                //-     .large-6.columns
+                //-         ul.inline-list.right
+                //-             li
+                //-                 a(href='#') Link 1
+                //-             li
+                //-                 a(href='#') Link 2
+                //-             li
+                //-                 a(href='#') Link 3
 
         script(src="bower_components/jquery/jquery.min.js")
         script(src="bower_components/foundation/js/foundation.min.js")
         script(src="js/app.js")
-        script(type="text/javascript").
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-34228211-1']);
-            _gaq.push(['_setDomainName', 'sunsetspark.org']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
