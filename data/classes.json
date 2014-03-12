@@ -45,7 +45,7 @@
         "id": "eeg",
         "title": {
             "en": "Programming for the Brain",
-            "es": "Programaci\u00f3n para la Vida"
+            "es": "Programaci\u00f3n para el Cerebro"
         },
         "pre_signup": {
             "en": "Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.",
@@ -58,13 +58,32 @@
     },
     {
         "description": {
-            "en": "Build a wearable computer to create colorful visualizations from your own dance moves.",
+            "en": "Build a wearable computer to create colorful visualizations from your own dance moves. Take your dance moves up a notch by adding in technology. This class walks teens through the process of creating a wearable device to capture movement and motion and turn them into futuristic computer art. If you have a love for dance, this class will use your passion as an entry way into the inventive world of programming and engineering.",
             "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi."
         },
         "id": "motion",
         "title": {
             "en": "Computing for Dancers",
             "es": "Inform\u00e1tica para los Bailarines"
+        },
+        "pre_signup": {
+            "en": "Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.",
+            "es": "Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna."
+        },
+        "post_signup": {
+            "en": "Thanks for signing up. We'll email you shortly with more details on the class.",
+            "es": "Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus at massa ipsum."
+        }
+    },
+    {
+        "description": {
+            "en": "Help your little one learn about science through hands on experiments. The best kind of fair is a science fair. Every week parents and kids (ages 4-6) team up to carry out a fun science experiment using household materials. Experiments might get a little messy. This class is beginner friendly and helps build an English vocabulary around scientific words and concepts. It's never too early or too late to become a scientist.",
+            "es": "Se trata de un discription de la clase. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi."
+        },
+        "id": "scienceLit",
+        "title": {
+            "en": "Science Literacy",
+            "es": "Alfabetizaci\u00f3n Científica"
         },
         "pre_signup": {
             "en": "Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.",
