@@ -72,7 +72,7 @@ mixin course_block(course, cols)
         dl.tabs.class-titles(data-tab)
             dd.tab-en
                 a(href="##{course.id}-en"): h3= course.title.en
-            dd.tab-es
+            dd.active.tab-es
                 a(href="##{course.id}-es"): h3= course.title.es
         .tabs-content
             .content(id="#{course.id}-en")
@@ -85,7 +85,7 @@ mixin course_block(course, cols)
                     .row
                         a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-en").
                             Sign Up Now
-            .content(id="#{course.id}-es")
+            .content.active(id="#{course.id}-es")
                 .panel.class-desc
                     .row
                         .columns(class="medium-#{cols / 2}")
