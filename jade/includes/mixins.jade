@@ -78,9 +78,9 @@ mixin course_block(course, cols)
                             p= course.description.en
                         .columns(class="medium-#{cols / 2}")
                             img.center(src="./img/classes/#{course.id}_465.jpg")
-                    .row
-                        a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-en").
-                            Sign Up Now
+                    //- .row
+                    //-     a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-en").
+                    //-         Sign Up Now
             .content(id="#{course.id}-es")
                 .panel.class-desc
                     .row
@@ -88,9 +88,9 @@ mixin course_block(course, cols)
                             p= course.description.es
                         .columns(class="medium-#{cols / 2}")
                             img.center(src="./img/classes/#{course.id}_465.jpg")
-                    .row
-                        a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-es").
-                            Inscribirse Ahora
+                    //- .row
+                    //-     a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-es").
+                    //-         Inscribirse Ahora
 
         mixin course_signup_modal(course)
         mixin course_postsignup_modal(course)
