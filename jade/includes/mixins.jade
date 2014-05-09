@@ -22,7 +22,7 @@ mixin course_signup_modal(course)
                             .medium-9.columns
                                 input(type="text", name='telephone', placeholder="Phone Number (or email address above)")
                         input(type="hidden", name='language', value="en")
-                    a.signup-button-med.center.expand(href="#", data-reveal-id="#{course.id}-post-modal-en").
+                    input.signup-button-med.center.expand(type="submit", value="Send",href="#", data-reveal-id="#{course.id}-post-modal-en").
                         Learn More
             a.close-reveal-modal &#215;
     .reveal-modal(id="#{course.id}-modal-es", data-reveal)
@@ -47,7 +47,7 @@ mixin course_signup_modal(course)
                             .medium-9.columns
                                 input(type="text", name='telephone', placeholder="Número de Teléfono (o correo electrónico por encima)")
                         input(type="hidden", name='language', value="en")
-                a.signup-button-med.center.expand(href="#", data-reveal-id="#{course.id}-post-modal-es").
+                input.signup-button-med.center.expand(type="submit", value="Send", href="#", data-reveal-id="#{course.id}-post-modal-es").
                     Aprenda Más
             a.close-reveal-modal &#215;
 
