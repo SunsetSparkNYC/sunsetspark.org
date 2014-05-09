@@ -12,7 +12,9 @@ html.no-js(lang="en, es")
         script(type="text/javascript", src="//use.typekit.net/ris3wje.js")
         script(type="text/javascript").
             try{Typekit.load();}catch(e){}
-
+        script(type="text/javascript").
+            window.heap=window.heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
+            heap.load("1477288499");
     body
         br
         .row
@@ -20,14 +22,14 @@ html.no-js(lang="en, es")
                 #top-logo
                     // Desktop Header
                     .hide-for-small
-                        img.center(src="img/logo.svg", width="960px", alt="¡Sunset Spark!")
-                        //- img.center(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
+                        //- img.center(src="img/logo.svg", width="960px", alt="¡Sunset Spark!")
+                        img.center(src="img/sunset-spark-trans-960x.png", alt="¡Sunset Spark!")
 
                     // Mobile Header
                     .row
                         .small-12.show-for-small.header-sml
-                            img.center(src="img/logo.svg", width="610px", alt="¡Sunset Spark!")
-                            //- img.center(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
+                            //- img.center(src="img/logo.svg", width="610px", alt="¡Sunset Spark!")
+                            img.center(src="img/sunset-spark-trans-610x.png", alt="¡Sunset Spark!")
         br
 
         .row
@@ -66,21 +68,23 @@ html.no-js(lang="en, es")
                                     h2 Aprendizaje para Todos
                                     hr
                                     p.
-                                        <strong>Become an scientist, inventor and lifelong
-                                        learner today.</strong>
-                                        Sunset Spark is a not-for-profit hackerspace for the
-                                        immigrant community of Sunset Park. We offer free high quality
-                                        classes for kids, adults and families in a wide variety of
-                                        science and engineering subjects like neuroscience, software
-                                        engineering, and physical computing.
+                                        <strong>Convertirse un científico, inventor y aprendiz
+                                        permanente.</strong>
+                                        Sunset Spark es una organización sin fines lucrativos
+                                        “hackerspace” para la comunidad inmigrante de Sunset Park.
+                                        Brindamos clases de alta calidad para niños, adultos y
+                                        familias en amplia variedad de temas de ciencia y
+                                        ingeniería de software y computación físico.
                                     p.
-                                        <strong>21st century skills for 21st century dreams.</strong>
-                                        We work with our students to make sure the classes meet their
-                                        needs and goals. All our classes incorporate hands-on projects,
-                                        experiments, skills and knowledge that will immediately
-                                        empower students of all ages to learn more on their own
-                                        and use their new knowledge in the real world in creative
-                                        and relevant ways.
+                                        <strong>Habilidades del siglo XXI para sueños del siglo
+                                        XXI.</strong>
+                                        Trabajamos con estudiantes para asegurar que las clases
+                                        pueden satisfacer sus metas. Todas nuestras clases se
+                                        incorporara proyectos interactivos que se permite
+                                        manipular, experimentos, habilidades y conocimientos que
+                                        inmediatamente capacita estudiantes de todas edades para
+                                        aprender mas independiente y que utiliza nueva información
+                                        en la vida real con una manera mas creativo y relevante.
 
         .row
             .small-12.columns
@@ -105,11 +109,12 @@ html.no-js(lang="en, es")
                                 .large-6.medium-6.columns
                                     h2 Clases
                                     h2.subheader.
-                                        Our free classes are open to all levels of learners. We
-                                        develop rich and innovative curricula that engage
-                                        students of diverse skills and backgrounds through hands-on
-                                        projects and relatable lessons. If there's a class you want
-                                        to take, contact us using the sign up button or send us an
+                                        Nuestra clases son abiertos a <strong>todos niveles de estudiantes</strong>.
+                                        Desarrollamos currículo enriquecedor atractivo para
+                                        estudiantes de habilidades y experiencias diversas a través
+                                        de proyectos interactivos y lecciones conectados. Si hay
+                                        una clase que te gusta tomar, contáctenos usando el botón
+                                        para inscribir o envíenos un
                                         <a href="mailto:contact@sunsetspark.org">email</a>.
                     .large-4.medium-4.small-10.small-centered.large-uncentered.medium-uncentered.columns
                         img(src="img/cell.png")
@@ -156,11 +161,11 @@ html.no-js(lang="en, es")
                                     h2 Más Clases Próximamente
                                     hr
                                     p.
-                                        We're a small team of two and a half with a passion for
-                                        community science. New classes are being developed every
-                                        month. If there's a subject you'd like to learn, contact us
-                                        below. We'll work together with you to create a fun and
-                                        engaging class for you and everyone else in the community.
+                                        Somos un grupo muy pequeño de dos y medio personas con una
+                                        pasión para ciencia en la comunidad. Nuevas clases se
+                                        desarrollan cada mes. Vamos a trabajar juntos para crear
+                                        una experiencia divertida y interactivo para usted y cada
+                                        uno de la comunidad.
 
         .row#contact
             .large-12.columns
@@ -182,9 +187,11 @@ html.no-js(lang="en, es")
                                     h2 Ponerse En Contacto
                                     hr
                                     p.
-                                        ¿Preguntas, comentarios, o algun cosa que quiere aprender?
-                                        ¡Nos encantaría saber de usted! Contact us using the button below
-                                        or send us an <a href="mailto:contact@sunsetspark.org">email</a>.
+                                        ¿Preguntas, comentos o tiene alguna tema que quieres
+                                        aprender? Si hay una tema que quieres aprender contáctenos
+                                        abajo. Nos encantaría saber de ti. Contáctenos usando el
+                                        botón de abajo o envíenos un
+                                        <a href="mailto:contact@sunsetspark.org">email</a>.
                                     a.signup-button-lrg.expand(href="#", data-reveal-id="contact-modal-es").
                                         Contacto
 
@@ -196,7 +203,7 @@ html.no-js(lang="en, es")
                     We'd love to hear from you. When you send us your message,
                     be sure to leave either your email address or phone number
                     so that we have a way to contact you.
-                form
+                form(action="//forms.brace.io/contact@sunsetspark.org")
                     .row
                     .small-12
                         .row
@@ -208,7 +215,7 @@ html.no-js(lang="en, es")
                             .medium-3.columns
                                 label.right.inline Email
                             .medium-9.columns
-                                input(type="text", name='email', placeholder="Email Address")
+                                input(type="email", name='_replyto', placeholder="Email Address")
                         .row
                             .medium-3.columns
                                 label.right.inline Phone Number
@@ -229,10 +236,10 @@ html.no-js(lang="en, es")
             .panel
                 h2 Envíenos un Mensaje
                 p.lead.
-                    We'd love to hear from you. When you send us your message,
-                    be sure to leave either your email address or phone number
-                    so that we have a way to contact you.
-                form
+                    Nos encantaría saber de ti. Cuando nos mandas un email, asegúrese de dejar
+                    bien su dirección de correo electrónico o número de teléfono para que podemos
+                    contactarte.
+                form(action="//forms.brace.io/contact@sunsetspark.org")
                     .row
                         .small-12
                             .row
@@ -244,7 +251,7 @@ html.no-js(lang="en, es")
                                 .medium-3.columns
                                     label.right.inline Email
                                 .medium-9.columns
-                                    input(type="text", name='email', placeholder="Correo Electrónico (o número de teléfono abajo)")
+                                    input(type="email", name='_replyto', placeholder="Correo Electrónico (o número de teléfono abajo)")
                             .row
                                 .medium-3.columns
                                     label.right.inline Tele Numbre
@@ -258,7 +265,7 @@ html.no-js(lang="en, es")
                             input(type="hidden", name='language', value="es")
                     .row
                         a.signup-button-med.center(href="#", data-reveal-id="contact-post-modal-es").
-                            Send Message
+                            Enviar mensaje
                 a.close-reveal-modal &#215;
 
         .reveal-modal(id="contact-post-modal-en", data-reveal)
@@ -269,8 +276,8 @@ html.no-js(lang="en, es")
 
         .reveal-modal(id="contact-post-modal-es", data-reveal)
             .panel
-                h2 Thanks for contacting us.
-                p.lead We'll contact you soon.
+                h2 Gracias por contáctanos.
+                p.lead Nos pondremos en contacto pronto.
                 a.close-reveal-modal &#215;
 
         // Footer
@@ -289,6 +296,6 @@ html.no-js(lang="en, es")
                 //-             li
                 //-                 a(href='#') Link 3
 
-        script(src="bower_components/jquery/jquery.min.js")
+        script(src="bower_components/jquery/dist/jquery.min.js")
         script(src="bower_components/foundation/js/foundation.min.js")
         script(src="js/app.js")

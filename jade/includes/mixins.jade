@@ -3,8 +3,7 @@ mixin course_signup_modal(course)
     .reveal-modal(id="#{course.id}-modal-en", data-reveal)
         .panel
             h2 Sign Up for <strong>#{course.title.en}</strong>
-            p.lead #{course.pre_signup.en}
-            form
+            form(action="//forms.brace.io/contact@sunsetspark.org")
                 .row
                     .small-12
                         .row
@@ -16,7 +15,7 @@ mixin course_signup_modal(course)
                             .medium-3.columns
                                 label.right.inline Email
                             .medium-9.columns
-                                input(type="text", name='email', placeholder="Email Address (or phone number below)")
+                                input(type="email", name='_replyto', placeholder="Email Address (or phone number below)")
                         .row
                             .medium-3.columns
                                 label.right.inline Phone Number
@@ -29,8 +28,7 @@ mixin course_signup_modal(course)
     .reveal-modal(id="#{course.id}-modal-es", data-reveal)
         .panel
             h2 Inscribirse en <strong>#{course.title.es}</strong>
-            p.lead #{course.pre_signup.es}
-            form
+            form(action="//forms.brace.io/contact@sunsetspark.org")
                 .row
                     .small-12
                         .row
@@ -42,7 +40,7 @@ mixin course_signup_modal(course)
                             .medium-3.columns
                                 label.right.inline Emailo
                             .medium-9.columns
-                                input(type="text", name='email', placeholder="Correo Electrónico (o número de teléfono abajo)")
+                                input(type="email", name='_replyto', placeholder="Correo Electrónico (o número de teléfono abajo)")
                         .row
                             .medium-3.columns
                                 label.right.inline Tele Numbre
@@ -57,25 +55,23 @@ mixin course_postsignup_modal(course)
     .reveal-modal(id="#{course.id}-post-modal-en", data-reveal)
         .panel
             h2 <strong>#{course.title.en}</strong>
-            p.lead #{course.post_signup.en}
             p We'll contact you soon with more details.
             a.close-reveal-modal &#215;
     .reveal-modal(id="#{course.id}-post-modal-es", data-reveal)
         .panel
             h2 <strong>#{course.title.es}</strong>
-            p.lead #{course.post_signup.es}
-            p Nos pondremos en contacto con te en breve con más detalles.
+            p Nos pondremos en contacto con más detalles.
             a.close-reveal-modal &#215;
 
 mixin course_block(course, cols)
     .columns(class="medium-#{cols}")
         dl.tabs.class-titles(data-tab)
-            dd.tab-en
+            dd.active.tab-en
                 a(href="##{course.id}-en"): h3= course.title.en
-            dd.active.tab-es
+            dd.tab-es
                 a(href="##{course.id}-es"): h3= course.title.es
         .tabs-content
-            .content(id="#{course.id}-en")
+            .content.active(id="#{course.id}-en")
                 .panel.class-desc
                     .row
                         .columns(class="medium-#{cols / 2}")
@@ -85,7 +81,7 @@ mixin course_block(course, cols)
                     .row
                         a.signup-button-med.center(href="#", data-reveal-id="#{course.id}-modal-en").
                             Sign Up Now
-            .content.active(id="#{course.id}-es")
+            .content(id="#{course.id}-es")
                 .panel.class-desc
                     .row
                         .columns(class="medium-#{cols / 2}")

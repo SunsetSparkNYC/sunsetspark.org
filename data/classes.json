@@ -2,7 +2,7 @@
     {
         "description": {
             "en": "Study the neurological and cognitive development of babies from conception through early childhood. Are you a new or expecting mother? If so, this class is for you. We'll explore the growth of your child's brain starting from just a handful of cells all the way through to elementary school. You'll learn how babies learn, grow a better understanding of the cognitive stages of infancy and childhood, and discovered scientifically-backed ways to be a better parent.",
-            "es": "Estudiar el desarrollo neurológico y cognitivo de bebés desde concepción hasta la primera infancia. ¿Estás esperando un bebé? ¿Eres una madre nueva? Si es así, esta clase es para ti. Exploramos el crecimiento del cerebro de su hijo/a comienzando de un solo mano de células hasta  el edad de primaria. Estudiar como bebés aprenden, conoce las etapas cognitivas de nacimiento y infancia, descubre como ser mejor padre con estudios científicamente apoyado."
+            "es": "Estudia el desarrollo neurológico y cognitivo de bebés desde concepción hasta la primera infancia. ¿Estás esperando un bebé? ¿Eres una madre nueva? Si es así, esta clase es para ti. Exploraremos el crecimiento del cerebro de su hijo/a comenzando con un solo mano de células hasta el edad de primaria. Aprenderá como bebés aprenden, conoce las etapas cognitivas de nacimiento y infancia, descubre como ser mejor padre con estudios científicamente apoyado."
         },
         "id": "baby",
         "title": {
@@ -21,7 +21,7 @@
     {
         "description": {
             "en": "Build a robot monster with Lego Mindstorms. Students will hone their creativity and engineering skills by designing innovative robots using special programmable Lego kits. Kids spend the semester building robots and learning about gears, sensors, programming, and autonomous behaviors. The semester ends with a monster robot party for friends and family to check out their creations. Sorry adults, this class is kids only.",
-            "es": "Construir un monstruo robótica de Lego Mindstorms. Estudiantes se enfocan su creatividad y habilidades de ingeniería por diseño robots innovadores programados especialmente con equipo de LEGO. Niños pasan el semestre construyendo robots y aprendiendo acerca de engranajes, sensores, programación, y comportamiento de las máquinas. El semestre termina con un fiesta de robots demostrando las creaciones para la familia y amigos. Los adultos lo siento, esta clase es solo para niños."
+            "es": "Construya un monstruo robótica de Lego Mindstorms. Estudiantes se enfocan su creatividad y habilidades de ingeniería usando equipo de LEGO para diseñar robots innovadores. Niños pasan el semestre construyendo robots y aprendiendo acerca de engranajes, sensores, programación, y comportamiento de las máquinas. El semestre termina con un fiesta de robots demostrando las creaciones para la familia y amigos. Esta clase es solo para niños, lo sentimos adultos."
         },
         "id": "robotMonsterParty",
         "title": {
@@ -40,7 +40,7 @@
     {
         "description": {
             "en": "Study programming using the ultimate computer, the human brain. Have you ever wanted to know what a brainwave looks like? Teens will create EEG experiments to measure neural activity in their own brains. That might not make sense now, but it will once you take the class. This is a unique opportunity to learn computer programming and neuroscience through experimentation. Along with the new skills and knowledge, teens will leave the class with a printout of activity in their own brain.",
-            "es": "Estudiar programación utilizando la computadora original, el cerebro humano. ¿Alguna vez has querido saber como se ve una onda cerebral? Adolescentes crean experimentos para medir actividades neuronales en sus propios cerebros. Por ahora no se entiende bien pero sería más claro cuando tomas el clase. A través de experimentación, en este oportunidad único aprendas programación de computadores y neurociencia. Junto con habilidades nuevos y conocimiento, adolescentes se llevan una copia impresa de la actividad de sus proprio cerebros."
+            "es": "Aprenda programación usando la computadora original, el cerebro humano. ¿Alguna vez has querido saber como se ve una onda cerebral? Adolescentes crean experimentos para medir actividades neural de sus propios cerebros. Por ahora no se entiende bien pero sería más claro cuando tomas el clase. A través de experimentación, en este oportunidad único aprendas programación de computadores y neurociencia. Junto con habilidades nuevos y conocimiento, adolescentes se llevan una copia impresa de la actividad de sus proprio cerebros."
         },
         "id": "eeg",
         "title": {
@@ -59,7 +59,7 @@
     {
         "description": {
             "en": "Build a wearable computer to create colorful visualizations from your own dance moves. Take your dance moves up a notch by adding in technology. This class walks teens through the process of creating a wearable device to capture movement and motion and turn them into futuristic computer art. If you have a love for dance, this class will use your passion as an entry way into the inventive world of programming and engineering.",
-            "es": "Construya una computadora que te pones con visualizaciones coloridos demonstrando tus pasos de baile. Mejora tus pasos de baile con tecnología. Este clase enseña los adolescentes el process de construir un aparato que se pone para detectar movimiento, transformando mociones en arte futurista computerizado. Si te gusta bailar, este clase utiliza su pasión como un punto de entrada de comprender el mundo inventivo de programación y ingeniería."
+            "es": "Construya un aparato portátil con visualizaciones coloridos mostrando tus pasos de baile. Mejora tus pasos de baile con tecnología. Esta clase enseña los adolescentes el proceso de construir un aparato portátil para detectar movimiento, transformando mociones en arte computerizado futurista. Si te gusta bailar, esta clase utiliza tu pasión como un punto de entrada de comprender el mundo inventivo de programación y ingeniería."
         },
         "id": "motion",
         "title": {
@@ -78,7 +78,7 @@
     {
         "description": {
             "en": "Help your little one learn about science through hands on experiments. The best kind of fair is a science fair. Every week parents and kids (ages 4-6) team up to carry out a fun science experiment using household materials. Experiments might get a little messy. This class is beginner friendly and helps build an English vocabulary around scientific words and concepts. It's never too early or too late to become a scientist.",
-            "es": "Ayuda tu pequeño aprender ciencias a través de experimentos interactivos. El mejor tipo de ferias es una feria de ciencias. Cada semana padres y niños (edades 4-6) trabajan juntos para realizar experimentos de ciencias divertidos usando enseres domésticos. Puede ensuciarse en los experimentos. Esta clase es bueno para iniciadores y ayuda desarrollar el vocabulario científico con palabras y conceptos en inglés. Nunca es demasiado tarde para ser un científico."
+            "es": "Ayuda tu pequeño aprender ciencias a través de experimentos interactivos. El mejor tipo de feria es una feria de ciencias. Cada semana padres y niños (edades 4-6) trabajan juntos para realizar experimentos de ciencias divertidos usando materiales domésticos. Algunos experimentos tienden ensuciarse. Esta clase es bueno para principiantes y te ayuda desarrollar el vocabulario científico con palabras y conceptos en inglés. Nunca es demasiado tarde para ser un científico."
         },
         "id": "scienceLit",
         "title": {

@@ -152,6 +152,10 @@ img.center {
     margin-top: -1px;
 }
 
+.reveal-modal {
+    z-index: 100;
+}
+
 .reveal-modal .close-reveal-modal {
     font-size: 22pt;
     color: $logo-yellow;
