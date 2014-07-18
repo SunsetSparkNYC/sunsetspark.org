@@ -1,4 +1,4 @@
-These are the files needed to host sunsetspark. Everything is copyright Gaelen Hadlett 2013-2014
+These are the files needed to host sunsetspark. Everything is copyright Gaelen Hadlett 2013-2014.
 
 Attributions
  - img/brain.svg
