@@ -2,12 +2,12 @@
 
 $include-open-sans: false;
 
-$logo-yellow: rgb(243, 228, 98);
-$logo-red: rgb(240, 145, 113);
-$logo-blue: rgb(129, 103, 230);
-$logo-white: rgb(231, 233, 227);
+$logo-yellow: rgb(243, 228, 98);  // #f3e462
+$logo-red: rgb(240, 145, 113);  // #f09171
+$logo-blue: rgb(129, 103, 230);  // #8167e6
+$logo-white: rgb(231, 233, 227);  // #e7e9e3
 
-$body-font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $header-font-family: $body-font-family;
 
 $panel-font-color: $logo-white;
@@ -30,6 +30,7 @@ $reveal-modal-bg: $logo-blue;
 $form-label-font-color: $logo-white;
 
 @import "foundation";
+
 
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
@@ -85,11 +86,11 @@ img.center {
 .no-panel {
     h2 {
         color: $logo-blue;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 300%;
         &.subheader {
             color: $logo-blue;
-            font-weight: normal;
+            font-weight: 300;
             font-size: 1.2rem;
             line-height: 1.25em;
         }
