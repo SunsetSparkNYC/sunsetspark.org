@@ -55,10 +55,15 @@ $on-laptop:        800px;
 // ;
 
 .cool-colors {
-    text-align: right;
-    background: #FC6 none repeat scroll 0% 0%;
-    font-size: 35px !important;
+    background: #FFD500 none repeat scroll 0% 0%;
+    font-size: 3rem !important;
     color: #FFF;
-    box-shadow: 0px 0px 0px 7px #F93, 12px 12px 0px 4px #437DD7;
+    padding: 0 1rem;
+    box-shadow: 0px 0px 0px 10px #FFAD19, 16px 16px 0px 4px #5633F4;
+    text-shadow: 0.01rem 0.05rem 0.15rem rgba(0, 0, 0, 0.8);
     line-height: 1.4;
+}
+
+q:before, q:after {
+    content: "";
 }
