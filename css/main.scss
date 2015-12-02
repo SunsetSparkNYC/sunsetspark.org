@@ -67,3 +67,15 @@ $on-laptop:        800px;
 q:before, q:after {
     content: "";
 }
+
+.masthead-brand {
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &:hover {
+        border-bottom: .44rem solid transparent;
+        border-bottom-color: rgb(69, 208, 62);
+    }
+}
