@@ -55,67 +55,48 @@ body {
   margin-left: auto;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 0.4rem 2rem 0rem 2rem;
-}
-
-
 /*
  * Header
  */
-
-.masthead {
+.navbar {
   background-color: rgba(86, 51, 244,.85);
   box-shadow: 0px 0px 0px 7px #FFAD19, 0px 12px 0px 4px #FFF919;
-  margin-bottom: 2rem;
 }
 
-.masthead-brand{
+.navbar-nav {
+  float: none;
+}
+
+.navbar-brand{
+  font-size: 1.75rem;
   margin-bottom: 0;
   margin-top: 0.4rem;
 }
 
-.nav-masthead .nav-link {
+.navbar-nav .nav-link {
   padding-top: 0.4rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-bottom: 0rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
   font-weight: bold;
   font-size: 1.25rem;
   color: rgba(255,255,255,.75);
   background-color: transparent;
-  border-bottom: .5rem solid transparent;
+  border-bottom: .45rem solid transparent;
 }
 
-.nav-masthead .nav-link:hover {
-    &:not(.active) {
-  border-bottom: .5rem solid transparent;
-  border-bottom-color: rgb(69, 208, 62);
-}
-}
-
-.nav-masthead .active {
+.navbar-nav .active {
   color: #fff;
   border-bottom-color: #E72429;
 }
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
 
 /*
  * Cover
  */
 
 .cover {
-  position: fixed;
-  bottom: 6rem;
+  position: absolute;
+  bottom: 4rem;
   padding: 0 1.5rem;
 
   float: right;
@@ -143,9 +124,9 @@ body {
 
 @media (min-width: 40em) {
   /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
+  .navbar {
     top: 0;
+    /*position: fixed;  /* Add this for transparent header */
   }
   .mastfoot {
     position: fixed;
@@ -156,15 +137,24 @@ body {
     vertical-align: middle;
   }
   /* Handle the widths */
-  .masthead,
+  .navbar,
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
+@media (min-width: 48em) {
+  .navbar-brand {
+    float: left;
+  }
+  .navbar-nav {
+    float: right;
+  }
+}
+
 @media (min-width: 62em) {
-  .masthead,
+  .navbar,
   .mastfoot,
   .cover-container {
     /*width: 42rem;*/
