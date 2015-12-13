@@ -80,12 +80,10 @@ q:before, q:after {
 }
 
 .navbar {
-    text-align: center;
     padding: 0.4rem 2rem 0rem 2rem;
 
     .nav-item {
         float: none;
-        text-align: center;
         display: inline-block;
         + .nav-item {
             margin-left: 0;
