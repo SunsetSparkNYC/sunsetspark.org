@@ -77,10 +77,6 @@ q:before, q:after {
             text-decoration: none;
         }
     }
-    &:hover {
-        border-bottom: 0.45rem solid transparent;
-        border-bottom-color: rgb(69, 208, 62);
-    }
 }
 
 .navbar {
@@ -99,7 +95,7 @@ q:before, q:after {
 
 .navbar-nav .nav-link:hover {
     &:not(.active) {
-      border-bottom: .45rem solid transparent;
+      border-bottom: .5rem solid transparent;
       border-bottom-color: rgb(69, 208, 62);
     }
 }

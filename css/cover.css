@@ -61,6 +61,7 @@ body {
 .navbar {
   background-color: rgba(86, 51, 244,.85);
   box-shadow: 0px 0px 0px 7px #FFAD19, 0px 12px 0px 4px #FFF919;
+  border-radius: 0;
 }
 
 .navbar-nav {
@@ -82,7 +83,7 @@ body {
   font-size: 1.25rem;
   color: rgba(255,255,255,.75);
   background-color: transparent;
-  border-bottom: .45rem solid transparent;
+  border-bottom: .5rem solid transparent;
 }
 
 .navbar-nav .active {
@@ -150,6 +151,12 @@ body {
   }
   .navbar-nav {
     float: right;
+  }
+  .navbar-nav .nav-link:hover {
+      &:not(.active) {
+        border-bottom: .5rem solid transparent;
+        border-bottom-color: rgb(69, 208, 62);
+      }
   }
 }
 
