@@ -101,3 +101,17 @@ q:before, q:after {
       border-bottom-color: rgb(69, 208, 62);
     }
 }
+
+
+.jumbotron {
+  background: transparent url(../img/classes/science-literacy-1080.jpg) repeat scroll left center;
+  background-size: cover !important;
+  min-height: 28rem;
+  border-radius: 0;
+  box-shadow: 0px 0px 0px 9px rgb(69, 208, 62);
+
+  .cool-colors {
+      bottom: -15rem;
+      position: relative;
+  }
+}
