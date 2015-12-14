@@ -1,49 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
+---
+layout: default
+---
+<div class="site-wrapper-inner">
+    <div class="cover-container">
 
-  <body>
-
-      <nav class="navbar clearfix">
-        <h3 class="navbar-brand"><a href="/">¡Sunset Spark!</a></h3>
-        <ul class="nav navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link {% if page.title == 'Learn' %}active{% endif %}" href="/learn">Learn</a>
-          <li class="nav-item">
-            <a class="nav-link {% if page.title == 'Principles' %}active{% endif %}" href="/principles">Principles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.title == 'About' %}active{% endif %}" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.title == 'Contact' %}active{% endif %}" href="/contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="inner cover">
-            <q class="cover-heading cool-colors">{{ content | remove: '<p>' | remove: '</p>' }}</q>
-          </div>
-
-        </div>
-
+      <div class="inner cover">
+        <q class="cover-heading cool-colors">{{ content | remove: '<p>' | remove: '</p>' }}</q>
       </div>
 
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ "js/vendor/jquery.min.js" | prepend: site.baseurl | prepend: site.url }}"><\/script>')</script>
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ "/js/ie10-viewport-bug-workaround.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  </body>
-</html>
+</div>
