@@ -1,5 +1,4 @@
-These are the files needed to host sunsetspark. Everything is copyright Gaelen Hadlett 2013-2014.
+These are the files needed to host sunsetspark. Everything is copyright Sunset Spark 2013-2016.
 
-Attributions
- - img/brain.svg
-    By NEUROtiker (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC-BY-SA-2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons
+/usr/local/opt/mozjpeg/bin/cjpeg -quality 75 -targa -outfile $OF.jpg $IF.tga
+exiv2 -M"set Exif.Image.Copyright © 2015 Sunset Spark, Inc." *.jpg
