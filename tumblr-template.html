@@ -299,8 +299,7 @@ html {
   font-size: 1em;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  font-family: sans-serif; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
   margin: 0;
@@ -374,7 +373,7 @@ small {
   font-size: 90%; }
 
 strong {
-  font-weight: bold; }
+  font-weight: 500; }
 
 li {
   list-style: none; }
@@ -430,7 +429,7 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: bold; }
+  font-weight: 500; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
@@ -506,21 +505,32 @@ pre {
   .no-mq .hidden-phone-inline {
     display: none; }
 
+#site-sidebar {
+  margin-right: 1.5em; }
+
 /* layout */
 .l-wrap {
   margin: 0 auto; }
   @media (max-width: 35.875em) {
+    #site-main {
+      padding: 1.5em 1em; }
     .l-wrap {
       width: 100%; } }
   @media (min-width: 35.9375em) and (max-width: 53.0625em) {
+    #site-main {
+      padding: 1.5em 1em; }
     .l-wrap {
       width: 100%; } }
   @media (min-width: 53.125em) and (max-width: 70.25em) {
+    #site-main {
+      padding: 1.5em 1em; }
     .l-wrap {
-      width: 50em; } }
+      width: 100%; } }
   @media (min-width: 70.3125em) and (max-width: 87.4375em) {
+    #site-main {
+        max-width: 67.1875em; }
     .l-wrap {
-      width: 67.1875em; } }
+      width: 100%; } }
   .no-mq .l-wrap {
     width: 67.1875em; }
   @media (min-width: 70.3125em) {
@@ -584,12 +594,11 @@ pre {
 .l-sidebar {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 1.5625em;
-  padding-bottom: 1.5625em; }
+  margin-bottom: 1.5625em; }
   @media (min-width: 35.9375em) and (max-width: 53.0625em) {
     .l-sidebar {
       width: 32.8125em;
-      margin: 0 auto;
+      margin: 0 auto 1.5625em;
       float: none; } }
   @media (min-width: 53.125em) {
     .l-sidebar {
@@ -623,7 +632,7 @@ pre {
     margin: 0 auto; } }
 
 #site-content {
-  float: right; }
+  float: left; }
   @media (max-width: 53.0625em) {
     #site-content {
       float: none; } }
@@ -635,7 +644,7 @@ pre {
       float: none; } }
 
 .l-s-left #site-content {
-  float: right; }
+  float: left; }
   @media (max-width: 53.0625em) {
     .l-s-left #site-content {
       float: none; } }
@@ -986,14 +995,11 @@ pre {
 
 /* Font Transformations */
 .customfont {
-  font-weight: bold; }
-
-.smooth {
-  -webkit-font-smoothing: antialiased; }
+  font-weight: 500; }
 
 /* strong as title */
 .postinfo .caption p:first-of-type strong {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.6em;
   line-height: 1.3em;
   display: block;
@@ -1003,7 +1009,7 @@ pre {
   line-height: 180%; }
 
 .tumblr_blog {
-  font-weight: bold; }
+  font-weight: 500; }
 
 /* Pagination */
 .is-index .pagination {
@@ -1303,7 +1309,7 @@ h3.truncate-text-short {
   position: absolute;
   right: 0;
   top: 0;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 0.825em;
   text-align: center;
   text-transform: uppercase; }
@@ -1358,7 +1364,7 @@ a.thumbnail-link:focus .thumbnail-text .date:first-letter {
   padding: 0; }
 
 .thumbnail-text-wrap h3 {
-  font-weight: bold; }
+  font-weight: 500; }
 
 .thumbnail-caption {
   width: 12.625em;
@@ -1403,7 +1409,7 @@ a.thumbnail-link:focus .thumbnail-text .date:first-letter {
 .quotesource {
   font-size: 0.75em;
   padding-top: 0.5em;
-  font-weight: bold; }
+  font-weight: 500; }
 
 .quotesource:before {
   content: "\2014";
@@ -1476,7 +1482,7 @@ a.thumbnail-link:focus .thumbnail-caption {
 
 .audio-prefix {
   font-size: 80%;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase; }
 
 .thumbnail {
@@ -1584,7 +1590,7 @@ a.thumbnail-link:focus .thumbnail-caption {
   margin-bottom: 0.5em;
   margin-top: 0;
   display: block;
-  font-weight: bold;
+  font-weight: 500;
   width: 100%; }
 
 .metainfo {
@@ -2130,7 +2136,7 @@ a.thumbnail-link:focus .media-info {
 	margin-right: 0.625em;
 	font-size: 1.5em;
 	text-align: center;
-	font-weight: bold;
+	font-weight: 500;
 	width: 3.5em;
 	height: 3.5em;
 	line-height: 3.5em;
@@ -2363,7 +2369,7 @@ ol.notes li blockquote {
 		}
 
 		#lbCaption {
-			font-weight: bold;
+			font-weight: 500;
 			display: none;
 		}
 
