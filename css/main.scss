@@ -193,3 +193,12 @@ q:before, q:after {
   margin-right: auto;
   margin-left: auto;
 }
+
+.typeform-widget {
+    border-bottom-color: yellow;
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem;
+    border-top-color: blue;
+    border-top-style: solid;
+    border-top-width: 0.4rem;
+}
