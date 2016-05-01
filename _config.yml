@@ -1,6 +1,6 @@
 # Site settings
 title: Sunset Spark
-email: your-email@domain.com
+email: hello@sunsetspark.org
 description: >
   Sunset Spark is a noloco hackerspace for immigrant families in Brooklyn, NY.
   We help new Americans of all ages use science and technology for fun,
@@ -27,7 +27,7 @@ kramdown:
     footnote_nr: 1
     entity_output: as_char
     toc_levels: 1..6
-    use_coderay: false
+    enable_coderay: false
     parse_block_html: false
 
 sass:
