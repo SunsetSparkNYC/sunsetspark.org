@@ -1,0 +1,295 @@
+html {
+    height: 100%;
+    font-family: system, "Segoe UI", Tahoma;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin:0 auto;
+  /*max-width:960px;*/
+  line-height:1.4;
+  font-size:18px;
+  color: #444;
+  background: #F0F0F0;
+  padding: 0;
+}
+
+h1,h2,h3,h3,h4,h5,h6 {
+    text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
+    line-height: 1.2;
+    margin: 0;
+}
+
+ol, ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    padding: 0;
+    background: #F0F0F0;
+    margin-top: 1rem;
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+section {
+    padding: 0 0 0.5em 0;
+}
+
+section > p {
+    margin: auto 1em;
+}
+
+li > a {
+    text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.img-center {
+    margin: 0 auto;
+    display: block;
+}
+
+hr {
+    padding-bottom: 0.5rem;
+    border-top: 0.25em solid #FF0080;
+    text-align: center;
+}
+
+hr.heart:after {
+    content: '\002665';
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    padding: 0 10px;
+    background: #F0F0F0;
+    color: #FF0080;
+    font-size: 20px;
+}
+
+hr.flower:after {
+    content: '\002698';
+    display: inline-block;
+    position: relative;
+    top: -28px;
+    padding: 0 10px;
+    background: #F0F0F0;
+    color: #FF0080;
+    font-size: 32px;
+}
+
+hr.sun:after {
+    content: '\002600';
+    display: inline-block;
+    position: relative;
+    top: -22px;
+    padding: 0 10px;
+    background: #F0F0F0;
+    color: #FF0080;
+    font-size: 28px;
+}
+
+hr.star:after {
+    content: '\002605';
+    display: inline-block;
+    position: relative;
+    top: -24px;
+    padding: 0 10px;
+    background: #F0F0F0;
+    color: #FF0080;
+    font-size: 28px;
+}
+
+.nav > li {
+    margin-left: 1.3em;
+}
+
+.nav > li:first-child {
+    margin-left: 0;
+}
+
+.nav-link {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255,255,255,.75);;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom-width: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+.nav-link.active {
+  color: white;
+  border-bottom-color: #E72429;
+}
+
+.nav-link.logo {
+  color: white;
+  /*font-size: 1.75rem;*/
+}
+
+.nav-link:not(.logo):hover {
+  border-bottom-color: #E72429;
+}
+
+.nav-bar {
+  position: relative;
+  background: rgb(86, 51, 244);
+  padding: 0.75em 1.5em 0em 1.5em;
+  box-shadow: 0px 0px 0px 7px #FFAD19, 0px 12px 0px 4px #FFF919;
+}
+
+.main-footer {
+    background: #FF0080;
+    color: #F0F0F0;
+    font-weight: 300;
+    padding: 0.5em 1em;
+}
+
+.footer-nav {
+    text-align: center;
+}
+
+.footer-nav > li {
+    display: inline;
+    text-align: center;
+    margin: auto 1.3em;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #F0F0F0;
+}
+
+.copyright {
+    font-size: 8pt;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.section-heading {
+    color: #F0F0F0;
+    background: #FF0080;
+    padding: 0.5em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+.cover-background {
+  background: transparent url(../img/classes/computing-literacy-controller-540@2x.jpg) repeat scroll center center;
+  background-size: cover !important;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.cover-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cover {
+  position: absolute;
+  bottom: 3.5rem;
+  padding: 0 2rem;
+
+  /*float: right;*/
+  text-align: right;
+  /*width: 100%;*/
+}
+
+.cool-colors {
+    background: #FFD500 none repeat scroll 0% 0%;
+    font-size: 2.5rem !important;
+    color: #FFF;
+    padding: 0 1rem;
+    box-shadow: 0px 0px 0px 10px #FFAD19, 16px 16px 0px 4px #5633F4;
+    text-shadow: 0.01rem 0.05rem 0.15rem rgba(0, 0, 0, 0.8);
+    line-height: 1.4;
+}
+
+q:before, q:after {
+    content: "";
+}
+
+.jumbotron {
+  background-size: cover !important;
+  min-height: 28rem;
+  /*border-radius: 0;*/
+  /*box-shadow: 0 0 0 0.75rem rgb(69, 208, 62);*/
+  /*margin-top: 0.75rem;*/
+
+  color: #fff;
+  text-align: center;
+  /*text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);*/
+}
+
+.science-cover {
+  background: transparent url(../img/classes/science-literacy-540@2x.jpg) repeat scroll left center;
+}
+
+.program-item {
+    background-color: white;
+    border-left: 0.5rem solid rgb(86, 51, 244);
+    padding: 0;
+}
+
+.program-item > h3 {
+    color: #F0F0F0;
+    background-color: rgb(86, 51, 244);
+    margin-bottom: 0;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    /*text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);*/
+}
+
+.program-item > p {
+    /*color: #444;*/
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    background: white;
+}
+
+.program-item > img {
+  border-bottom-color: #FFD500;
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem;
+  /*background-color: rgb(86, 51, 244);*/
+  /*padding: 0 0 0.4rem 0;*/
+  border-top: 0.4rem solid #FF0080;
+}
+
+.typeform-widget {
+  border-bottom-color: #FFD500;
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem;
+  /*border-top-color: rgb(86, 51, 244);
+  border-top-style: solid;
+  border-top-width: 0.4rem;*/
+}

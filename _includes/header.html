@@ -1,20 +1,20 @@
-<header class="site-header">
-    <nav class="navbar clearfix">
-      <h3 class="navbar-brand"><a href="/">¡Sunset Spark!</a></h3>
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link {% if page.title == 'Learn' %}active{% endif %}" href="/learn">Learn</a>
-        <li class="nav-item">
-          <a class="nav-link {% if page.title == 'Principles' %}active{% endif %}" href="/principles">Principles</a>
+<header class="nav-bar">
+  <nav>
+      <ul class="nav clearfix">
+        <li class="left">
+          <a class="nav-link logo" href="/">¡Sunset Spark!</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="//blog.sunsetspark.org">Blog</a>
+        <li class="right block">
+          <a class="nav-link {% if page.title == 'Contact' %}active{% endif %}" href="/contact/">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.title == 'About' %}active{% endif %}" href="/about">About</a>
+        <li class="right block">
+          <a class="nav-link {% if page.title == 'About' %}active{% endif %}" href="/about/">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.title == 'Contact' %}active{% endif %}" href="/contact">Contact</a>
+        <li class="right block">
+          <a class="nav-link {% if page.title == 'Schools' %}active{% endif %}" href="/schools/">Schools</a>
+        </li>
+        <li class="right block">
+          <a class="nav-link {% if page.title == 'Learn' %}active{% endif %}" href="/learn/">Learn</a>
         </li>
       </ul>
     </nav>

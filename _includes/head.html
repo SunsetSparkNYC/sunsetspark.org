@@ -1,20 +1,27 @@
 <head>
+  <!-- Must come first -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Meta -->
+  <title>{% if page.title %}{{ page.title }} | Sunset Spark{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="">
-
-  <title>{% if page.title %}{{ page.title }} | Sunset Spark{% else %}{{ site.title }}{% endif %}</title>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Feed -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
+  <!-- Styles -->
+  <link href="{{ "/css/normalize-4.1.1.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/system-font.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/gridism-0.2.1.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/styles.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
-  <link href="{{ "/css/cover.css" | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
+  <!--[if lt IE 9]>
+      <script src="html5shiv.min.js"></script>
+  <![endif]-->
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="{{ "/js/ie10-viewport-bug-workaround.js" | prepend: site.baseurl | prepend: site.url }}"></script>
