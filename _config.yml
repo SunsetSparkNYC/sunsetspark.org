@@ -19,7 +19,7 @@ links:
 # Build settings
 timezone: America/New_York
 future: true
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 
 kramdown:
