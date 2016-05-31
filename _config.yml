@@ -7,14 +7,6 @@ description: >
   family, and the future.
 baseurl: ""
 url: "https://sunsetspark.org"
-twitter_username: SunsetSparkNYC
-github_username: SunsetSparkNYC
-instagram_username: SunsetSparkNYC
-googleplus_username: SunsetSparkNYC
-
-links:
-  - title: About
-    url: /about
 
 # Build settings
 timezone: America/New_York
