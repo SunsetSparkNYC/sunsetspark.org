@@ -5,8 +5,8 @@ description: >
   Sunset Spark is a noloco hackerspace for immigrant families in Brooklyn, NY.
   We help new Americans of all ages use science and technology for fun,
   family, and the future.
-baseurl: ""
-url: "https://sunsetspark.org"
+baseurl: "/sunsetspark.org"
+url: "https://sunsetsparknyc.github.io"
 
 # Build settings
 timezone: America/New_York

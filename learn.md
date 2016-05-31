@@ -25,7 +25,7 @@ permalink: /learn/
         <li class="program-listing unit half">
             <article class="program-item">
                 <h3>Brains and Babies</h3>
-                <img src="/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
+                <img src="{{ site.baseurl }}/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
                 <p>This is where I talk about neuro stuff. And maybe some other stuff goes here. The description is probably four to five sentences. It should go on for a few lines, but not too long.</p>
             </article>
         </li>
@@ -33,7 +33,7 @@ permalink: /learn/
         <li class="program-listing unit half">
             <article class="program-item">
                 <h3>Brains and Babies</h3>
-                <img src="/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
+                <img src="{{ site.baseurl }}/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
                 <p>This is where I talk about neuro stuff. And maybe some other stuff goes here. The description is probably four to five sentences. It should go on for a few lines, but not too long.</p>
             </article>
         </li>
@@ -41,14 +41,14 @@ permalink: /learn/
         <li class="program-listing unit half">
             <article class="program-item">
                 <h3>Brains and Babies</h3>
-                <img src="/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
+                <img src="{{ site.baseurl }}/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
                 <p>This is where I talk about neuro stuff. And maybe some other stuff goes here. The description is probably four to five sentences. It should go on for a few lines, but not too long.</p>
             </article>
         </li>
         <li class="program-listing unit half">
             <article class="program-item">
                 <h3>Brains and Babies</h3>
-                <img src="/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
+                <img src="{{ site.baseurl }}/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
                 <p>This is where I talk about neuro stuff. And maybe some other stuff goes here. The description is probably four to five sentences. It should go on for a few lines, but not too long.</p>
             </article>
         </li>
