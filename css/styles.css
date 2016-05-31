@@ -28,7 +28,12 @@ ol, ul {
 }
 
 p {
-    margin: 0;
+    margin: 0 auto;
+}
+
+
+div > p:not(:first-child) {
+    margin-top: 1rem;
 }
 
 main {
@@ -46,7 +51,8 @@ section {
 }
 
 section > p {
-    margin: auto 1em;
+    padding: 0.5rem 1em 0 1em;
+    max-width: 960px;
 }
 
 li > a {
@@ -151,7 +157,6 @@ hr.star:after {
 
 .nav-link.logo {
   color: white;
-  /*font-size: 1.75rem;*/
 }
 
 .nav-link:not(.logo):hover {
@@ -167,7 +172,7 @@ hr.star:after {
 
 .main-footer {
     background: #FF0080;
-    color: #F0F0F0;
+    color: #FDFDFD;
     font-weight: 300;
     padding: 0.5em 1em;
 }
@@ -185,7 +190,7 @@ hr.star:after {
 .footer-link {
     text-decoration: none;
     font-weight: 700;
-    color: #F0F0F0;
+    color: #FDFDFD;
 }
 
 .copyright {
@@ -196,7 +201,7 @@ hr.star:after {
 }
 
 .section-heading {
-    color: #F0F0F0;
+    color: #FDFDFD;
     background: #FF0080;
     padding: 0.5em;
     margin-bottom: 0.25em;
@@ -227,13 +232,13 @@ hr.star:after {
 }
 
 .cool-colors {
-    background: #FFD500 none repeat scroll 0% 0%;
-    font-size: 2.5rem !important;
-    color: #FFF;
-    padding: 0 1rem;
-    box-shadow: 0px 0px 0px 10px #FFAD19, 16px 16px 0px 4px #5633F4;
-    text-shadow: 0.01rem 0.05rem 0.15rem rgba(0, 0, 0, 0.8);
-    line-height: 1.4;
+  background: #FFD500 none repeat scroll 0% 0%;
+  font-size: 2.5rem !important;
+  color: #FFFFFF;
+  padding: 0 1rem;
+  box-shadow: 0px 0px 0px 10px #FFAD19, 16px 16px 0px 4px #5633F4;
+  text-shadow: 0.01rem 0.05rem 0.15rem rgba(0, 0, 0, 0.8);
+  line-height: 1.4;
 }
 
 q:before, q:after {
@@ -247,7 +252,7 @@ q:before, q:after {
   /*box-shadow: 0 0 0 0.75rem rgb(69, 208, 62);*/
   /*margin-top: 0.75rem;*/
 
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
   /*text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);*/
 }
@@ -257,31 +262,27 @@ q:before, q:after {
 }
 
 .program-item {
-    background-color: white;
+    background-color: #FFFFFF;
     border-left: 0.5rem solid rgb(86, 51, 244);
     padding: 0;
 }
 
 .program-item > h3 {
-    color: #F0F0F0;
+    color: #FDFDFD;
     background-color: rgb(86, 51, 244);
     margin-bottom: 0;
     padding: 0.25rem 0 0.25rem 0.5rem;
-    /*text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);*/
 }
 
 .program-item > p {
-    /*color: #444;*/
     padding: 0.5rem 0.5rem 1rem 0.5rem;
-    background: white;
+    background: #FFFFFF;
 }
 
 .program-item > img {
   border-bottom-color: #FFD500;
   border-bottom-style: solid;
   border-bottom-width: 0.4rem;
-  /*background-color: rgb(86, 51, 244);*/
-  /*padding: 0 0 0.4rem 0;*/
   border-top: 0.4rem solid #FF0080;
 }
 
@@ -289,7 +290,9 @@ q:before, q:after {
   border-bottom-color: #FFD500;
   border-bottom-style: solid;
   border-bottom-width: 0.4rem;
-  /*border-top-color: rgb(86, 51, 244);
-  border-top-style: solid;
-  border-top-width: 0.4rem;*/
+}
+
+.lead {
+  font-weight: 700;
+  font-size: 24px;
 }
