@@ -13,6 +13,12 @@ timezone: America/New_York
 future: true
 highlighter: rouge
 markdown: kramdown
+lsi: false
+safe: true
+incremental: false
+
+sass:
+    style: :compressed
 
 kramdown:
     auto_ids: true
@@ -21,6 +27,9 @@ kramdown:
     toc_levels: 1..6
     enable_coderay: false
     parse_block_html: false
+    input: GFM
+    hard_wrap: false
+    math_engine: mathjax
 
-sass:
-    style: :compressed
+ # gist:
+ #    noscript: false
