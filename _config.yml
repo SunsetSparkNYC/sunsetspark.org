@@ -18,6 +18,7 @@ incremental: false
 exclude: ['bin', 'conf', 'Gemfile', 'Gemfile.lock', 'README.md', 'Rakefile']
 
 sass:
+    sass_dir: css
     style: :compressed
 
 kramdown:
