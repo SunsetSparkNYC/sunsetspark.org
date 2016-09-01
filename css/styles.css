@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    font-family: system, "Segoe UI", Tahoma;
+    font-family: system, -apple-system, "Segoe UI", Tahoma;
 }
 
 body {
@@ -142,7 +142,7 @@ hr.star:after {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(255,255,255,.75);;
+  color: rgba(255,255,255,.75);
   font-weight: bold;
   font-size: 1.3rem;
   border-bottom-width: 0.5rem;
