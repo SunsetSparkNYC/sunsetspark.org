@@ -3,7 +3,7 @@ layout: default
 title: Schools
 permalink: /schools/
 ---
-<div class="jumbotron science-cover">
+<div class="jumbotron computing-cover">
     <!-- <h1></h1> -->
 </div>
 

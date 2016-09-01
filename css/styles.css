@@ -261,6 +261,10 @@ q:before, q:after {
   background: transparent url(../img/classes/science-literacy-540@2x.jpg) repeat scroll left center;
 }
 
+.computing-cover {
+  background: transparent url(../img/classes/computing-literacy-spaceship-540@2x.jpg) repeat scroll left center;
+}
+
 .program-item {
     background-color: #FFFFFF;
     border-left: 0.5rem solid rgb(86, 51, 244);
