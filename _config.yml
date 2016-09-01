@@ -30,6 +30,3 @@ kramdown:
     input: GFM
     hard_wrap: false
     math_engine: mathjax
-
- # gist:
- #    noscript: false

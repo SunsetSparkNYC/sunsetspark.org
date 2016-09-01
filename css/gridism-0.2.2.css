@@ -20,14 +20,14 @@
 .grid .unit {
   float: left;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 10px;
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
-.grid .unit:first-child { padding-left: 1rem; }
-.grid .unit:last-child { padding-right: 1rem; }
+.grid .unit:first-child { padding-left: 20px; }
+.grid .unit:last-child { padding-right: 20px; }
 
-/* Nested grids already have padding though, so let’s nuke it */
+/* Nested grids already have padding though, so let's nuke it */
 .unit .unit:first-child { padding-left: 0; }
 .unit .unit:last-child { padding-right: 0; }
 .unit .grid:first-child > .unit { padding-top: 0; }
@@ -91,14 +91,19 @@
   max-width: 100%;
 }
 
+/* Hide elements using this class by default */
+.only-on-mobiles {
+  display: none !important;
+}
+
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
-  /* Stack anything that isn’t full-width on smaller screens
+  /* Stack anything that isn't full-width on smaller screens 
      and doesn't provide the no-stacking-on-mobiles class */
   .grid:not(.no-stacking-on-mobiles) > .unit {
     width: 100% !important;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .unit .grid .unit {
     padding-left: 0px;
@@ -112,11 +117,15 @@
   .hide-on-mobiles {
     display: none !important;
   }
+  .only-on-mobiles {
+    display: block !important;
+  }
 }
 
 /* Expand the wrap a bit further on larger screens */
 @media screen and (min-width: 1180px) {
-  .wider .grid {
+  .wider .grid,
+  .grid.wider {
     max-width: 1180px;
     margin: 0 auto;
   }
