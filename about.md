@@ -15,7 +15,7 @@ permalink: /about/
   <h2 class="section-heading">Yadira &amp; Gaelen Hadlett</h2>
   <div class="grid">
     <div class="unit half align-right center-on-mobiles">
-      <img src="{{ "/img/about.gif" | prepend: site.github.url }}" />
+      <img src="/img/about.gif" />
     </div>
     <div class="unit half">
       <p>
