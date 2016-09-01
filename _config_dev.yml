@@ -1,5 +1,5 @@
-url: "http://localhost:4000/"
-baseurl: ""
+github:
+    url: "//localhost:4000/sunsetspark.org"
 
 sass:
     style: :expanded

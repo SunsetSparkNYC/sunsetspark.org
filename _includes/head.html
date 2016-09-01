@@ -8,21 +8,21 @@
   <title>{% if page.title %}{{ page.title }} | Sunset Spark{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url }}">
 
   <!-- Feed -->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.github.url }}">
 
   <!-- Styles -->
-  <link href="{{ "/css/normalize-4.1.1.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
-  <link href="{{ "/css/system-font.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
-  <link href="{{ "/css/gridism-0.2.1.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
-  <link href="{{ "/css/styles.css" | prepend: site.baseurl | prepend: site.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/normalize-4.1.1.css" | prepend: site.github.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/system-font.css" | prepend: site.github.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/gridism-0.2.1.css" | prepend: site.github.url }}" type="text/css" rel="stylesheet" />
+  <link href="{{ "/css/styles.css" | prepend: site.github.url }}" type="text/css" rel="stylesheet" />
 
   <!--[if lt IE 9]>
       <script src="html5shiv.min.js"></script>
   <![endif]-->
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="{{ "/js/ie10-viewport-bug-workaround.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+  <script src="{{ "/js/ie10-viewport-bug-workaround.js" | prepend: site.github.url }}"></script>
 </head>
