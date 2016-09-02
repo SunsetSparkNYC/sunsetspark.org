@@ -7,6 +7,7 @@ description: >
   family, and the future.
 
 # Build settings
+env: production
 timezone: America/New_York
 future: true
 highlighter: rouge

@@ -1,3 +1,4 @@
+env: development
 github:
     url: "//localhost:4000/sunsetspark.org"
 
