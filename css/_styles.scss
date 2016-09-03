@@ -7,7 +7,6 @@ body {
   height: 100%;
   min-height: 100%;
   margin:0 auto;
-  /*max-width:960px;*/
   line-height:1.4;
   font-size:18px;
   color: #444;
@@ -85,8 +84,8 @@ hr {
     border-left: 0;
     border-top: 0.25em solid #FF0080;
     text-align: center;
-    color: rgba(0,0,0,0);
-    background-color: rgba(0,0,0,0);
+    color: transparent;
+    background-color: transparent;
 }
 
 hr.heart:after {
@@ -237,10 +236,11 @@ hr.star:after {
 .cool-colors {
   background: #FFD500 none repeat scroll 0% 0%;
   font-size: 2.5rem !important;
-  color: #FFFFFF;
+  font-weight: 500;
+  color: #FDFDFD;
   padding: 0 1rem;
   box-shadow: 0px 0px 0px 10px #FFAD19, 16px 16px 0px 4px #5633F4;
-  text-shadow: 0.03rem 0.07rem 0.2rem rgba(0, 0, 0, 0.85);
+  text-shadow: 0.02rem 0.07rem 0.2rem rgba(44, 44, 44, 0.75);
   line-height: 1.4;
 }
 
@@ -255,7 +255,7 @@ q:before, q:after {
   /*box-shadow: 0 0 0 0.75rem rgb(69, 208, 62);*/
   /*margin-top: 0.75rem;*/
 
-  color: #FFFFFF;
+  color: #FDFDFD;
   text-align: center;
   /*text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);*/
 }
