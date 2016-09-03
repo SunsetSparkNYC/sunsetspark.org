@@ -13,7 +13,7 @@ permalink: /about/
 
 <section>
   <h2 class="section-heading">Yadira &amp; Gaelen Hadlett</h2>
-  <div class="grid">
+  <div class="grid wrap">
     <div class="unit half align-right center-on-mobiles">
       <img src="/img/about.gif" alt="Gaelen and Yadira Hadlett" />
     </div>
