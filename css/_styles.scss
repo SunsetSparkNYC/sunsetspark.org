@@ -82,9 +82,11 @@ li > a {
 
 hr {
     padding-bottom: 0.5rem;
+    border-left: 0;
     border-top: 0.25em solid #FF0080;
     text-align: center;
     color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
 }
 
 hr.heart:after {
