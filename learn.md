@@ -14,13 +14,13 @@ permalink: /learn/
 <hr class="heart">
 <section>
     <h2 class="section-heading">Serving Families in Sunset Park</h2>
-    <p>We want every family attending a school in Sunset Park to have free access to the best creative technology classes in the city. To help make this happen, we work with most schools in the greater Sunset Park neighborhood, including P.S. 24, 516, 971, 503, 172, 131, 169, St. Agatha School, and Charles Dewey. You can also find us at the Sunset Park, Bush Terminal Park, the local Library, Atlas:DIY, the Muslim Community Center, Industry City, and other neighborhood centers.</p>
+    <p>We want every family attending a school in Sunset Park to have free access to the best creative technology classes in the city. To help make this happen, we work with most schools in the greater Sunset Park neighborhood, including P.S. 24, 516, 971, 506, 172, 131, 169, 896, and Charles Dewey. You can also find us at the Sunset Park, Bush Terminal Park, the local Library, Atlas:DIY, Industry City, and other neighborhood centers.</p>
 </section>
 <hr class="star">
 
 <section>
     <h2 class="section-heading">Impact</h2>
-    <p>In the 2015-2016 school year, over <b>1,400 students</b> took part in our robotics, coding, and computer engineering programs.  We taught multi-week programs in <b>23 general education classes</b>, <b>13 ICT classes</b>, <b>2 self-contained classes</b>, and <b>4 dual language classes</b>.</p>
+    <p>In the 2018-2019 school year, over <b>2,000 students</b> in Sunset Park took part in our robotics, coding, and computer engineering programs. We taught multi-week programs in <b>35 general education classes</b>, <b>15 ICT classes</b>, and <b>3 self-contained classes</b>.</p>
 </section>
 <hr class="heart">
 

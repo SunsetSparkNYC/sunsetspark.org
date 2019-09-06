@@ -1,6 +1,6 @@
 # What
 
-These are the files needed to host sunsetspark. Everything is copyright Sunset Spark 2013-2017.
+These are the files needed to host sunsetspark. Everything is copyright Sunset Spark 2013-2019.
 
 # How
 
