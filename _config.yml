@@ -17,6 +17,7 @@ safe: true
 incremental: false
 
 exclude: ['bin', 'conf', 'Gemfile', 'Gemfile.lock', 'README.md', 'Rakefile']
+include: ['.well-known']
 
 sass:
     sass_dir: css
