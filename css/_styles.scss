@@ -54,6 +54,14 @@ section > p {
     max-width: 978px;
 }
 
+div.vimeo {
+  // This should mirror section > p.
+  // It wraps the Vimeo iframe with similar styles
+  padding: 0.5rem 1em 0 1em;
+  max-width: 978px;
+  margin: 0 auto
+}
+
 li > a {
     text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
 }
