@@ -26,8 +26,8 @@ ol, ul {
     list-style: none;
 }
 
-details:focus {
-  outline: none;
+summary:focus, details:focus {
+  outline: #FF0080 solid 4px;
 }
 
 summary::-webkit-details-marker {
