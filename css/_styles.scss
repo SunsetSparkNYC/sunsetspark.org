@@ -26,10 +26,13 @@ ol, ul {
     list-style: none;
 }
 
+summary::-webkit-details-marker {
+  display:none;
+}
+
 p {
     margin: 0 auto;
 }
-
 
 div > p:not(:first-child) {
     margin-top: 1rem;
