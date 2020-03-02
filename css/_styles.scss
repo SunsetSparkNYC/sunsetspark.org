@@ -26,6 +26,10 @@ ol, ul {
     list-style: none;
 }
 
+details:focus {
+  outline: none;
+}
+
 summary::-webkit-details-marker {
   display:none;
 }
