@@ -1,6 +1,21 @@
+$spark-blue: #5633F4;
+$spark-pink: #FF0080;
+$spark-yellow: #FFF919;
+$spark-red: #E72429;
+$spark-orange: #FFAD19;
+$spark-yellow-dark: #FFD500;
+$spark-white: #FDFDFD;
+$spark-beige: #F0F0F0;
+$spark-black: #444;
+
+// 300: light
+// 400: regular
+// 500: medium
+// 700: bold
+
 html {
     height: 100%;
-    font-family: system, -apple-system, "Segoe UI", Tahoma;
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma;
 }
 
 body {
@@ -8,14 +23,13 @@ body {
   min-height: 100%;
   margin:0 auto;
   line-height:1.4;
-  font-size:18px;
-  color: #444;
-  background: #F0F0F0;
+  font-size: 110%;
+  color: $spark-black;
+  background: $spark-white;
   padding: 0;
 }
 
 h1,h2,h3,h3,h4,h5,h6 {
-    text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
     line-height: 1.2;
     margin: 0;
 }
@@ -27,7 +41,7 @@ ol, ul {
 }
 
 summary:focus, details:focus {
-  outline: #FF0080 solid 4px;
+  outline: $spark-pink solid 4px;
 }
 
 summary::-webkit-details-marker {
@@ -44,7 +58,7 @@ div > p:not(:first-child) {
 
 main {
     padding: 0;
-    background: #F0F0F0;
+    background: $spark-beige;
     margin-top: 1rem;
     display: table;
     width: 100%;
@@ -58,14 +72,14 @@ section {
 
 section > p {
     padding: 0.5rem 1em 0 1em;
-    max-width: 978px;
+    max-width: 768px;
 }
 
 div.vimeo-wrap {
   // This should mirror section > p.
   // It wraps the Vimeo iframe with similar styles
-  padding: 0.5rem 1em 0 1em;
-  max-width: 978px;
+  padding: 0.5rem 0 0 0;
+  max-width: 768px;
   margin: 0 auto
 }
 
@@ -101,7 +115,7 @@ li > a {
 hr {
     padding-bottom: 0.5rem;
     border-left: 0;
-    border-top: 0.25em solid #FF0080;
+    border-top: 0.25em solid $spark-pink;
     text-align: center;
     color: transparent;
     background-color: transparent;
@@ -111,44 +125,33 @@ hr.heart:after {
     content: '\002665';
     display: inline-block;
     position: relative;
-    top: -16px;
+    top: -20px;
     padding: 0 10px;
-    background: #F0F0F0;
-    color: #FF0080;
-    font-size: 20px;
-}
-
-hr.flower:after {
-    content: '\002698';
-    display: inline-block;
-    position: relative;
-    top: -28px;
-    padding: 0 10px;
-    background: #F0F0F0;
-    color: #FF0080;
-    font-size: 32px;
+    background: $spark-beige;
+    color: $spark-pink;
+    font-size: 140%;
 }
 
 hr.sun:after {
     content: '\002600';
     display: inline-block;
     position: relative;
-    top: -22px;
+    top: -23px;
     padding: 0 10px;
-    background: #F0F0F0;
-    color: #FF0080;
-    font-size: 28px;
+    background: $spark-beige;
+    color: $spark-pink;
+    font-size: 160%;
 }
 
 hr.star:after {
     content: '\002605';
     display: inline-block;
     position: relative;
-    top: -24px;
+    top: -26px;
     padding: 0 10px;
-    background: #F0F0F0;
-    color: #FF0080;
-    font-size: 28px;
+    background: $spark-beige;
+    color: $spark-pink;
+    font-size: 160%;
 }
 
 .nav > li {
@@ -164,36 +167,36 @@ hr.star:after {
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(255,255,255,.75);
-  font-weight: bold;
-  font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 125%;
   border-bottom-width: 0.5rem;
   border-bottom-style: solid;
   border-bottom-color: transparent;
 }
 
 .nav-link.active {
-  color: white;
-  border-bottom-color: #E72429;
+  color: $spark-white;
+  border-bottom-color: $spark-red;
 }
 
 .nav-link.logo {
-  color: white;
+  color: $spark-white;
 }
 
 .nav-link:not(.logo):hover {
-  border-bottom-color: #E72429;
+  border-bottom-color: $spark-red;
 }
 
 .nav-bar {
   position: relative;
-  background: rgb(86, 51, 244);
+  background: $spark-blue;
   padding: 0.75em 1.5em 0em 1.5em;
-  box-shadow: 0px 0px 0px 7px #FFAD19, 0px 12px 0px 4px #FFF919;
+  box-shadow: 0px 0px 0px 7px $spark-orange, 0px 12px 0px 4px $spark-yellow;
 }
 
 .main-footer {
-    background: #FF0080;
-    color: #FDFDFD;
+    background: $spark-pink;
+    color: $spark-white;
     font-weight: 300;
     padding: 0.5em 1em;
 }
@@ -211,22 +214,23 @@ hr.star:after {
 .footer-link {
     text-decoration: none;
     font-weight: 700;
-    color: #FDFDFD;
+    color: $spark-white;
 }
 
 .copyright {
-    font-size: 8pt;
+    font-size: 70%;
     text-align: center;
     font-weight: 300;
     margin-top: 10px;
 }
 
 .section-heading {
-    color: #FDFDFD;
-    background: #FF0080;
+    color: $spark-white;
+    background: $spark-pink;
     padding: 0.5em;
     margin-bottom: 0.25em;
     text-align: center;
+    text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
 }
 
 .cover-background {
@@ -253,12 +257,12 @@ hr.star:after {
 }
 
 .cool-colors {
-  background: #FFD500 none repeat scroll 0% 0%;
-  font-size: 2.5rem !important;
+  background:  $spark-yellow-dark none repeat scroll 0% 0%;
+  font-size: 245% !important;
   font-weight: 500;
-  color: #FDFDFD;
+  color: $spark-white;
   padding: 0 1rem;
-  box-shadow: 0px 0px 0px 10px #FFAD19, 16px 16px 0px 4px #5633F4;
+  box-shadow: 0px 0px 0px 10px $spark-orange, 16px 16px 0px 4px $spark-blue;
   text-shadow: 0.02rem 0.07rem 0.2rem rgba(44, 44, 44, 0.75);
   line-height: 1.4;
 }
@@ -274,7 +278,7 @@ q:before, q:after {
   /*box-shadow: 0 0 0 0.75rem rgb(69, 208, 62);*/
   /*margin-top: 0.75rem;*/
 
-  color: #FDFDFD;
+  color: $spark-white;
   text-align: center;
   /*text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);*/
 }
@@ -287,41 +291,58 @@ q:before, q:after {
   background: transparent url(../img/classes/computing-literacy-spaceship-540@2x.jpg) repeat scroll left center;
 }
 
+.pink-cover {
+  background-color: $spark-pink;
+  font-size: 200%;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  min-height: 30rem;
+  padding-top: 240px;
+  border-bottom: 8px solid $spark-yellow;
+}
+
+.pink-cover > h4 {
+  font-weight: 300;
+  margin-top: 32px;
+}
+
 .program-item {
-    background-color: #FFFFFF;
+    background-color: $spark-white;
     border-left: 0.5rem solid rgb(86, 51, 244);
     padding: 0;
 }
 
 .program-item > h3 {
-    color: #FDFDFD;
-    background-color: rgb(86, 51, 244);
+    color: $spark-white;
+    background-color: $spark-blue;
     margin-bottom: 0;
     padding: 0.25rem 0 0.25rem 0.5rem;
+    text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
 }
 
 .program-item > p {
     padding: 0.5rem 0.5rem 1rem 0.5rem;
-    background: #FFFFFF;
+    background: $spark-white;
 }
 
 .program-item > img {
-  background-color: #FFD500;
-  border-bottom-color: #FFD500;
+  background-color:  $spark-yellow-dark;
+  border-bottom-color:  $spark-yellow-dark;
   border-bottom-style: solid;
   border-bottom-width: 0.4rem;
-  border-top: 0.4rem solid #FF0080;
+  border-top: 0.4rem solid $spark-pink;
 }
 
 .typeform-widget {
-  border-bottom-color: #FFD500;
+  border-bottom-color:  $spark-yellow;
   border-bottom-style: solid;
   border-bottom-width: 0.4rem;
 }
 
 .lead {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 140%;
 }
 
 .buttons {
@@ -330,9 +351,9 @@ q:before, q:after {
 
 a.button, summary.button {
   margin: 0.5rem;
-  color: #FDFDFD;
-  background-color: rgb(86, 51, 244);
-  border: 4px solid rgb(86, 51, 244);
+  color: $spark-white;
+  background-color: $spark-blue;
+  border: 4px solid $spark-blue;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
@@ -342,16 +363,43 @@ a.button, summary.button {
   text-decoration: none;
 
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 125%;
 }
 
 // a.button:hover {
-//   border-color: #FF0080;
-//   box-shadow: 0px 0px 0px 4px #FFD500, 8px 8px 0px 2px #FFAD19;
+//   border-color: $spark-pink;
+//   box-shadow: 0px 0px 0px 4px  $spark-yellow, 8px 8px 0px 2px $spark-orange;
 // }
 
 a.button:hover, summary.button:hover {
-  border-color: #FFD500;
-  box-shadow: 0px 0px 0px 4px #FF0080;
+  border-color:  $spark-yellow;
+  box-shadow: 0px 0px 0px 4px $spark-pink;
   cursor: pointer;
+}
+
+// Blog Styles
+.blog-entry > section.entry-content > p {
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  max-width: 768px;
+}
+
+.blog-entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header-wrap {
+  background-color: $spark-pink;
+}
+
+.entry-header {
+  text-align: center;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.entry-metadata {
+  font-size: 140%;
+  font-weight: 700;
+  text-align: center;
 }
