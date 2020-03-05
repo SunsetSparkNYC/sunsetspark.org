@@ -6,6 +6,11 @@ description: >
   We help new Americans of all ages use science and technology for fun,
   family, and the future.
 
+# Blog
+excerpt_separator: <!--more-->
+paginate: 5
+paginate_path: "/glob/page:num/"
+
 # Build settings
 env: production
 timezone: America/New_York
