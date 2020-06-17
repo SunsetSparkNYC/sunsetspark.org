@@ -7,11 +7,11 @@
   <!-- Meta -->
   <title>{% if page.title %}{{ page.title }} | Sunset Spark{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="author" content="">
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Sunset Spark {% endif %}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url }}">
 
   <!-- Feed -->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+  {% feed_meta %}
 
   <!-- Styles -->
   <link href="/css/main.css" type="text/css" rel="stylesheet" />

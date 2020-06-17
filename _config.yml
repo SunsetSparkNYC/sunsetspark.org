@@ -1,5 +1,6 @@
 # Site settings
 title: Sunset Spark
+author: Sunset Spark
 email: hello@sunsetspark.org
 description: >
   Sunset Spark is a noloco hackerspace for immigrant families in Brooklyn, NY.
@@ -23,6 +24,12 @@ incremental: false
 
 exclude: ['bin', 'conf', 'Gemfile', 'Gemfile.lock', 'README.md', 'Rakefile']
 include: ['.well-known']
+
+paginate_path: "/glob/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
 
 sass:
     sass_dir: css

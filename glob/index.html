@@ -1,0 +1,46 @@
+---
+layout: default
+title: Wildcard Characters
+---
+<div class="jumbotron pink-cover">
+    <h1>Wildcard Characters</h1>
+    <h5>Loose thoughts on education, community, and tech from Sunset Spark.</h5>
+</div>
+
+<section>
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+    <article class="paginated-post">
+        <h1 class="post-heading"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <section class="post-metadata">
+            <span>by <a>{{ post.author }}</a> // </span>
+                <span><a>{{ post.date | date_to_string: "ordinal", "US"  }}</a></span>
+                {% if post.series %}<span>// <a>{{ post.series }}</a></span>{% endif %}
+            </span>
+        </section>
+        <section class="post-content">
+          {{ post.excerpt }}
+          <p><a class="post-continue" href="{{ post.url }}">Continue reading ></a></p>
+        </section>
+    </article>
+    {% endfor %}
+
+    <!-- Pagination links -->
+    <div class="pagination-links">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="pagination-link">
+          « Newer
+        </a>
+      {% else %}
+        <span class="pagination-link">« Newer</span>
+      {% endif %}
+      <!-- <span class="page_number ">
+        {{ paginator.page }} of {{ paginator.total_pages }}
+      </span> -->
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="pagination-link">Older »</a>
+      {% else %}
+        <span class="pagination-link">Older »</span>
+      {% endif %}
+    </div>
+</section>

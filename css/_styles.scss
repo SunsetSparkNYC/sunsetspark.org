@@ -1,12 +1,14 @@
 $spark-blue: #5633F4;
-$spark-pink: #FF0080;
+$spark-pink: #ff0080;
 $spark-yellow: #FFF919;
 $spark-red: #E72429;
 $spark-orange: #FFAD19;
 $spark-yellow-dark: #FFD500;
 $spark-white: #FDFDFD;
 $spark-beige: #F0F0F0;
-$spark-black: #444;
+$spark-black: #444444;
+
+$page-width: 768px;
 
 // 300: light
 // 400: regular
@@ -72,14 +74,14 @@ section {
 
 section > p {
     padding: 0.5rem 1em 0 1em;
-    max-width: 768px;
+    max-width: $page-width;
 }
 
 div.vimeo-wrap {
   // This should mirror section > p.
   // It wraps the Vimeo iframe with similar styles
   padding: 0.5rem 0 0 0;
-  max-width: 768px;
+  max-width: $page-width;
   margin: 0 auto
 }
 
@@ -159,7 +161,7 @@ hr.star:after {
 }
 
 .nav > li {
-    margin-left: 1.3em;
+    margin-left: 0.8em;
 }
 
 .nav > li:first-child {
@@ -301,14 +303,16 @@ q:before, q:after {
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
-  min-height: 30rem;
-  padding-top: 240px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   border-bottom: 8px solid $spark-yellow;
+  min-height: 0;
 }
 
-.pink-cover > h4 {
+.pink-cover > h5 {
   font-weight: 300;
   margin-top: 32px;
+  text-transform: none;
 }
 
 .program-item {
@@ -382,28 +386,84 @@ a.button:hover, summary.button:hover {
 }
 
 // Blog Styles
-.blog-entry > section.entry-content > p {
-  line-height: 1.6;
-  letter-spacing: -0.02em;
-  max-width: 768px;
+.post-heading {
+  color: $spark-white;
+  background: $spark-blue;
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+  text-align: center;
+  text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
 }
 
-.blog-entry {
+.post-heading > a {
+  color: $spark-white;
+  text-decoration: none;
+}
+
+.post-heading > a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: $spark-yellow;
+}
+
+a.post-continue, a.pagination-link {
+  font-weight: 700;
+  color: $spark-blue;
+  text-decoration: none;
+}
+
+.blog-post-cover {
+  background-color: $spark-pink;
+  font-size: 200%;
+  font-weight: 700;
+  min-height: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 8px solid $spark-yellow;
+}
+
+.paginated-post  {
+  margin-bottom: 2rem;
+}
+
+.pagination-links {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-top: 0.20em solid $spark-orange;
+  text-align: center;
+}
+
+.blog-post {
+  padding: 0 0 0.5em 0;
   margin-bottom: 1.5rem;
 }
 
-.entry-header-wrap {
+.blog-post > p {
+  padding: 0.5rem 1em 0 1em;
+  max-width: $page-width;
+}
+
+.blog-post > .post-content > p {
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  max-width: $page-width;
+}
+
+.post-header-wrap {
   background-color: $spark-pink;
 }
 
-.entry-header {
+.post-header {
   text-align: center;
-  max-width: 768px;
+  max-width: $page-width;
   margin: 0 auto;
 }
 
-.entry-metadata {
-  font-size: 140%;
+.post-metadata {
+  font-size: 120%;
   font-weight: 700;
   text-align: center;
+  padding-top: 1rem;
 }

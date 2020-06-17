@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<!-- Title -->
+<!-- Author, Date, Series? -->
+<article class="blog-post">
+    <div class="jumbotron blog-post-cover">
+        <h1>{{ page.title }}</h1>
+    </div>
+    <section class="post-metadata">
+        <span>by <a>{{ page.author }}</a> // </span>
+            <span><a>{{ page.date | date_to_string: "ordinal", "US"  }}</a></span>
+            {% if page.series %}<span>// <a>{{ page.series }}</a></span>{% endif %}
+        </span>
+    </section>
+    <section class="post-content">
+        {{ page.content }}
+    </section>
+    {% if page.tweet_id %}
+    <div class="buttons">
+        <a class="button" title="Discuss on Twitter" href="https://twitter.com/intent/tweet?in_reply_to={{ page.tweet_id }}" target="_blank">Discuss on Twitter</a>
+        <a class="button" title="View Discussions" href="https://twitter.com/sunsetsparknyc/status/{{ page.tweet_id }}">View Discussion</a>
+    </div>
+    {% endif %}
+</article>
