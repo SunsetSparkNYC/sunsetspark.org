@@ -10,7 +10,7 @@ layout: default
     <section class="post-metadata">
         <span>by <a>{{ page.author }}</a> // </span>
             <span><a>{{ page.date | date_to_string: "ordinal", "US"  }}</a></span>
-            {% if page.series %}<span>// <a>{{ page.series }}</a></span>{% endif %}
+            {% if page.categoy %}<span>// <a>{{ page.category }}</a></span>{% endif %}
         </span>
     </section>
     <section class="post-content">
@@ -23,3 +23,5 @@ layout: default
     </div>
     {% endif %}
 </article>
+
+{% include donate.html %}

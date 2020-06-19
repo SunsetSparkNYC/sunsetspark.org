@@ -15,7 +15,7 @@ title: Wildcard Characters
         <section class="post-metadata">
             <span>by <a>{{ post.author }}</a> // </span>
                 <span><a>{{ post.date | date_to_string: "ordinal", "US"  }}</a></span>
-                {% if post.series %}<span>// <a>{{ post.series }}</a></span>{% endif %}
+                {% if post.category %}<span>// <a>{{ post.category }}</a></span>{% endif %}
             </span>
         </section>
         <section class="post-content">
@@ -44,3 +44,5 @@ title: Wildcard Characters
       {% endif %}
     </div>
 </section>
+
+{% include donate.html %}
