@@ -328,10 +328,15 @@ q:before, q:after {
   min-height: 0;
 }
 
-.pink-cover > h5 {
-  font-weight: $text-light;
-  margin-top: 32px;
-  text-transform: none;
+.pink-cover {
+  h1 {
+    line-height: 1;
+  }
+  h6 {
+    font-weight: $text-light;
+    margin-top: 0.5rem;
+    text-transform: none;
+  }
 }
 
 .program-item {
@@ -490,8 +495,15 @@ a.post-continue, a.pagination-link {
 }
 
 .post-metadata {
-  font-size: 120%;
+  font-size: 100%;
   font-weight: $text-bold;
   text-align: center;
   padding-top: 1rem;
+}
+
+.author-name {
+}
+
+.author-role {
+  font-style: italic;
 }

@@ -8,9 +8,9 @@ layout: default
         <h1>{{ page.title }}</h1>
     </div>
     <section class="post-metadata">
-        <span>by <a>{{ page.author }}</a> // </span>
-            <span><a>{{ page.date | date_to_string: "ordinal", "US"  }}</a></span>
-            {% if page.categoy %}<span>// <a>{{ page.category }}</a></span>{% endif %}
+        <span><span class="author-name">{{ page.author.name }}</span>, <span class="author-role">{{ page.author.role }}</span> // </span>
+            <span>{{ page.date | date_to_string: "ordinal", "US"  }} </span>
+            {% if page.category %}<span>// {{ page.category }}</span>{% endif %}
         </span>
     </section>
     <section class="post-content">

@@ -4,7 +4,7 @@ title: Wildcard Characters
 ---
 <div class="jumbotron pink-cover">
     <h1>Wildcard Characters</h1>
-    <h5>Loose thoughts on education, community, and tech from Sunset Spark.</h5>
+    <h6>Loose thoughts on education, community, and tech from Sunset Spark.</h6>
 </div>
 
 <section>
@@ -13,9 +13,9 @@ title: Wildcard Characters
     <article class="paginated-post">
         <h1 class="post-heading"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <section class="post-metadata">
-            <span>by <a>{{ post.author }}</a> // </span>
-                <span><a>{{ post.date | date_to_string: "ordinal", "US"  }}</a></span>
-                {% if post.category %}<span>// <a>{{ post.category }}</a></span>{% endif %}
+            <span><span class="author-name">{{ post.author.name }}</span>, <span class="author-role">{{ post.author.role }}</span> // </span>
+                <span>{{ post.date | date_to_string: "ordinal", "US"  }} </span>
+                {% if post.category %}<span>// {{ post.category }}</span>{% endif %}
             </span>
         </section>
         <section class="post-content">
