@@ -28,3 +28,5 @@ permalink: /about/
 </section>
 
 <hr class="heart">
+
+{% include donate.html %}

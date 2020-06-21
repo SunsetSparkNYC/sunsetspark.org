@@ -1,17 +1,19 @@
 $spark-blue: #5633F4;
-$spark-pink: #FF0080;
+$spark-pink: #ff0080;
 $spark-yellow: #FFF919;
 $spark-red: #E72429;
 $spark-orange: #FFAD19;
 $spark-yellow-dark: #FFD500;
 $spark-white: #FDFDFD;
 $spark-beige: #F0F0F0;
-$spark-black: #444;
+$spark-black: #444444;
 
-// 300: light
-// 400: regular
-// 500: medium
-// 700: bold
+$page-width: 768px;
+
+$text-light: 300;
+$text-regular: 400;
+$text-medium: 500;
+$text-bold: 700;
 
 html {
     height: 100%;
@@ -67,20 +69,24 @@ main {
 }
 
 section {
-    padding: 0 0 0.5em 0;
+    padding: 0 0 1em 0;
 }
 
 section > p {
     padding: 0.5rem 1em 0 1em;
-    max-width: 768px;
+    max-width: $page-width;
 }
 
 div.vimeo-wrap {
   // This should mirror section > p.
   // It wraps the Vimeo iframe with similar styles
   padding: 0.5rem 0 0 0;
-  max-width: 768px;
+  max-width: $page-width;
   margin: 0 auto
+}
+
+section.donate {
+  margin-top: 1rem;
 }
 
 div.donorbox-wrap {
@@ -159,7 +165,7 @@ hr.star:after {
 }
 
 .nav > li {
-    margin-left: 1.3em;
+    margin-left: 0.8em;
 }
 
 .nav > li:first-child {
@@ -171,7 +177,7 @@ hr.star:after {
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(255,255,255,.75);
-  font-weight: 700;
+  font-weight: $text-bold;
   font-size: 125%;
   border-bottom-width: 0.5rem;
   border-bottom-style: solid;
@@ -201,7 +207,7 @@ hr.star:after {
 .main-footer {
     background: $spark-pink;
     color: $spark-white;
-    font-weight: 300;
+    font-weight: $text-light;
     padding: 0.5em 1em;
 }
 
@@ -217,14 +223,14 @@ hr.star:after {
 
 .footer-link {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: $text-bold;
     color: $spark-white;
 }
 
 .copyright {
     font-size: 70%;
     text-align: center;
-    font-weight: 300;
+    font-weight: $text-light;
     margin-top: 10px;
 }
 
@@ -235,6 +241,21 @@ hr.star:after {
     margin-bottom: 0.25em;
     text-align: center;
     text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
+}
+
+.section-striped {
+  background: repeating-linear-gradient(
+    45deg,
+    $spark-yellow-dark,
+    $spark-yellow-dark 5px,
+    $spark-pink 5px,
+    $spark-pink 10px
+  );
+}
+
+.section-striped > span {
+  background: $spark-pink;
+  padding: 0 0.5em;
 }
 
 .cover-background {
@@ -263,7 +284,7 @@ hr.star:after {
 .cool-colors {
   background:  $spark-yellow-dark none repeat scroll 0% 0%;
   font-size: 245% !important;
-  font-weight: 500;
+  font-weight: $text-medium;
   color: $spark-white;
   padding: 0 1rem;
   box-shadow: 0px 0px 0px 10px $spark-orange, 16px 16px 0px 4px $spark-blue;
@@ -298,17 +319,24 @@ q:before, q:after {
 .pink-cover {
   background-color: $spark-pink;
   font-size: 200%;
-  font-weight: 700;
+  font-weight: $text-bold;
   font-style: italic;
   text-transform: uppercase;
-  min-height: 30rem;
-  padding-top: 240px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   border-bottom: 8px solid $spark-yellow;
+  min-height: 0;
 }
 
-.pink-cover > h4 {
-  font-weight: 300;
-  margin-top: 32px;
+.pink-cover {
+  h1 {
+    line-height: 1;
+  }
+  h6 {
+    font-weight: $text-light;
+    margin-top: 0.5rem;
+    text-transform: none;
+  }
 }
 
 .program-item {
@@ -345,7 +373,7 @@ q:before, q:after {
 }
 
 .lead {
-  font-weight: 700;
+  font-weight: $text-bold;
   font-size: 140%;
 }
 
@@ -366,7 +394,7 @@ a.button, summary.button {
   // border-radius: .25rem;
   text-decoration: none;
 
-  font-weight: 700;
+  font-weight: $text-bold;
   font-size: 125%;
 }
 
@@ -381,29 +409,101 @@ a.button:hover, summary.button:hover {
   cursor: pointer;
 }
 
-// Blog Styles
-.blog-entry > section.entry-content > p {
-  line-height: 1.6;
-  letter-spacing: -0.02em;
-  max-width: 768px;
+.newsletter-iframe {
+  max-width: $page-width;
+  margin: 1em auto 0 auto;
 }
 
-.blog-entry {
+iframe.substack {
+  max-width: 100%;
+}
+
+// Blog Styles
+.post-heading {
+  color: $spark-white;
+  background: $spark-blue;
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+  text-align: center;
+  text-shadow: 0.01rem .05rem .20rem rgba(0,0,0,.6);
+}
+
+.post-heading > a {
+  color: $spark-white;
+  text-decoration: none;
+}
+
+.post-heading > a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: $spark-yellow;
+}
+
+a.post-continue, a.pagination-link {
+  font-weight: $text-bold;
+  color: $spark-blue;
+  text-decoration: none;
+}
+
+.blog-post-cover {
+  background-color: $spark-pink;
+  font-size: 200%;
+  font-weight: $text-bold;
+  min-height: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 8px solid $spark-yellow;
+}
+
+.paginated-post  {
+  margin-bottom: 2rem;
+}
+
+.pagination-links {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-top: 0.20em solid $spark-orange;
+  text-align: center;
+}
+
+.blog-post {
+  padding: 0 0 0.5em 0;
   margin-bottom: 1.5rem;
 }
 
-.entry-header-wrap {
+.blog-post > p {
+  padding: 0.5rem 1em 0 1em;
+  max-width: $page-width;
+}
+
+.blog-post > .post-content > p {
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  max-width: $page-width;
+}
+
+.post-header-wrap {
   background-color: $spark-pink;
 }
 
-.entry-header {
+.post-header {
   text-align: center;
-  max-width: 768px;
+  max-width: $page-width;
   margin: 0 auto;
 }
 
-.entry-metadata {
-  font-size: 140%;
-  font-weight: 700;
+.post-metadata {
+  font-size: 100%;
+  font-weight: $text-bold;
   text-align: center;
+  padding-top: 1rem;
+}
+
+.author-name {
+}
+
+.author-role {
+  font-style: italic;
 }

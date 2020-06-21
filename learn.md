@@ -96,3 +96,5 @@ permalink: /learn/
 </section>
 
 <hr class="heart">
+
+{% include donate.html %}
