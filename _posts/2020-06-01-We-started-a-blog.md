@@ -20,6 +20,6 @@ If you want to read more about us, follow us on [Instagram](https://instagram.co
 
 <div class="newsletter-iframe"><iframe class="substack" src="https://sunsetsparknyc.substack.com/embed" width="768" height="100" style="" frameborder="0" scrolling="no"></iframe></div>
 
-We also have an [RSS feed](/feed.xml) for News.app or other feed readers.
+We also have an [RSS feed](/feed.xml) for feed readers if that's your thing.
 
 <!--more-->
