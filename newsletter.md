@@ -15,7 +15,7 @@ permalink: /newsletter/
 
     <p>If you run a privacy plugin like 1Blocker or uBlock, you might not see the email box above. In that case, click <a href="https://sunsetsparknyc.substack.com/embed">here</a> to subscribe.</p>
 
-    <p>While you're here, if you use a news feed app likes News.app or something else that can handle RSS, you can subscribe to our blog feed by clicking <a href="/feed.xml">this</a>.</p>
+    <p>While you're here, if you use an app that can handle RSS, you can subscribe to our blog feed by clicking <a href="/feed.xml">this</a>.</p>
 
 </section>
 
