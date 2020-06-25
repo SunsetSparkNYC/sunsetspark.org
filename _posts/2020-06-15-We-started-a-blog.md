@@ -2,7 +2,7 @@
 layout: blog-post
 author:
     name: Gaelen
-    role: Co-Director of *
+    role: Co-Poster of *
 title: "We Started a Blog"
 # category: blogchain series
 # tweet_id:

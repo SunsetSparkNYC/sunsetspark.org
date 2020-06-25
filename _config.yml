@@ -30,6 +30,7 @@ paginate_path: "/glob/page:num/"
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-sitemap
 
 sass:
     sass_dir: css

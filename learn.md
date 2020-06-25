@@ -2,6 +2,7 @@
 layout: default
 title: Learn
 permalink: /learn/
+excerpt: Sunset Spark helps new Americans of all ages use science and technology for fun, family, and the future. We offer free high quality classes for kids, adults and families in a wide variety of modern science and engineering subjects.
 ---
 <div class="jumbotron science-cover">
     <!-- <h1></h1> -->
