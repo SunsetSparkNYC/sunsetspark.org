@@ -2,6 +2,7 @@
 layout: default
 title: Newsletter
 permalink: /newsletter/
+excerpt: Subscribe to Sunset Spark's newsletter to get info on free workshops, livestreams, lesson plans and activities, and more.
 ---
 <div class="jumbotron computing-cover">
     <!-- <h1></h1> -->

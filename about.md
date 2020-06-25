@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+excerpt: Find out about Sunset Spark's history here.
 ---
 
 <section>
