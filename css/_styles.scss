@@ -326,9 +326,7 @@ q:before, q:after {
   padding-bottom: 6rem;
   border-bottom: 8px solid $spark-yellow;
   min-height: 0;
-}
 
-.pink-cover {
   h1 {
     line-height: 1;
   }
@@ -338,6 +336,13 @@ q:before, q:after {
     text-transform: none;
   }
 }
+
+@media all and (max-width: 478px) {
+  .pink-cover h1 {
+      font-size: 1.5em !important;
+  }
+}
+
 
 .program-item {
     background-color: $spark-white;
