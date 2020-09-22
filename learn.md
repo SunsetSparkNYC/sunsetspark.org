@@ -39,17 +39,17 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
 
         <li class="program-listing unit half">
             <article class="program-item">
-                <h3 class="program-title">Brains and Babies</h3>
-                <img src="/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
-                <p>Study the neurological and cognitive development from conception to the teen year. Parents explore the growth of your child's brain starting from just a handful of cells all the way through to middle school. Parents learn how babies learn, grow a better understanding of the neurocognitive stages of infancy and childhood, and discover scientifically-backed ways to nurture your child's growing brain.</p>
+                <h3 class="program-title">Birding Club</h3>
+                <img src="/img/classes/birding-540@2x.jpg" alt="Birding" width="100%"/>
+                <p>Investigate the birds living and passing through the neighborhood while enjoying the outdoors. Kids explore and inspect nature with high and low tech to learn how to identify birds by appearance, sound, and environment. We combine citizen science and tech to create a kinship with all of nature's inhabitants.</p>
             </article>
         </li>
       </div><div class="grid">
         <li class="program-listing unit half">
             <article class="program-item">
-                <h3 class="program-title">Electro Dancing</h3>
-                <img src="/img/classes/computing-for-dancers-540.jpg" alt="Electro Dancing" width="100%"/>
-                <p>Computer engineering, fashion, and dance collide in our electro dance program.  Students learn different styles of dance along with fashion technology and coding to create interactie, light up dance costumes.</p>
+                <h3 class="program-title">Brains and Babies</h3>
+                <img src="/img/classes/brains-and-babies-540.jpg" alt="Brains and Babies" width="100%"/>
+                <p>Study the neurological and cognitive development from conception to the teen year. Parents explore the growth of your child's brain starting from just a handful of cells all the way through to middle school. Parents learn how babies learn, grow a better understanding of the neurocognitive stages of infancy and childhood, and discover scientifically-backed ways to nurture your child's growing brain.</p>
             </article>
         </li>
         <li class="program-listing unit half">
