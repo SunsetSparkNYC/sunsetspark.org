@@ -36,15 +36,21 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
                 <p>Students learn how to create their own video games using code. We offer versions of this class for 3rd through 8th grade classes and students.  Younger grades learn how to code using tablet coding environments to create games and interactive stories. For older grades, students learn how to program in JavaScript and use professional tools to develop web and mobile games.</p>
             </article>
         </li>
-
         <li class="program-listing unit half">
             <article class="program-item">
                 <h3 class="program-title">Birding Club</h3>
-                <img src="/img/classes/birding-540@2x.jpg" alt="Birding" width="100%"/>
+                <img src="/img/classes/birding-540.jpg" alt="Birding" width="100%"/>
                 <p>Investigate the birds living and passing through the neighborhood while enjoying the outdoors. Kids explore and inspect nature with high and low tech to learn how to identify birds by appearance, sound, and environment. We combine citizen science and tech to create a kinship with all of nature's inhabitants.</p>
             </article>
         </li>
       </div><div class="grid">
+        <li class="program-listing unit half">
+            <article class="program-item">
+                <h3 class="program-title">Computer Security</h3>
+                <img src="/img/classes/computer-security-540.jpg" alt="Game Development" width="100%"/>
+                <p>Middle school students learn how to keep their online activity secure while learning about the professional and underground world of computer security. Kids look at how their privacy is exposed, secured, and sold online. This course teaches kids how to live securely online and introduces them to paths in computer security.</p>
+            </article>
+        </li>
         <li class="program-listing unit half">
             <article class="program-item">
                 <h3 class="program-title">Brains and Babies</h3>
@@ -52,11 +58,19 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
                 <p>Study the neurological and cognitive development from conception to the teen year. Parents explore the growth of your child's brain starting from just a handful of cells all the way through to middle school. Parents learn how babies learn, grow a better understanding of the neurocognitive stages of infancy and childhood, and discover scientifically-backed ways to nurture your child's growing brain.</p>
             </article>
         </li>
+      </div><div class="grid">
         <li class="program-listing unit half">
             <article class="program-item">
-                <h3 class="program-title">Toy Making</h3>
+                <h3 class="program-title">Developing Mathematical Thinkers</h3>
                 <img src="/img/classes/toy-making-540.jpg" alt="Toy Making" width="100%"/>
-                <p>Put 3D printing and scanning technology to use in our toy making class.  Students learn how to design or scan and modify objects in 3D, then print them using 3D printers.</p>
+                <p>Look at the development of mathematical thinking in our youngest learners. Parents learn games and techniques for encouraging mathematical thought in toddlers and young kids. Parents then learn how to make their own math manipulatives using 3D modeling software and print on 3D printers. Everyone leaves with a set of customized parent-made math toys.</p>
+            </article>
+        </li>
+        <li class="program-listing unit half">
+            <article class="program-item">
+                <h3 class="program-title">Electro Dancing</h3>
+                <img src="/img/classes/computing-for-dancers-540.jpg" alt="Toy Making" width="100%"/>
+                <p>Computer engineering, fashion, and dance collide in our electro dance program.  Students learn different styles of dance along with fashion technology and coding to create interactie, light up dance costumes.</p>
             </article>
         </li>
       </div>
