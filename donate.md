@@ -14,3 +14,11 @@ excerpt: Sunset Spark needs your help. We can't continue our work without donors
     <iframe allowpaymentrequest="" frameborder="0" loading="eager" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/support-sunset-spark?default_interval=o" style="max-width: 425px; max-height:none!important" width="100%"></iframe>
   </div>
 </section>
+<section>
+  <h2 class="section-heading">Our Financial Partners</h2>
+  <div class="funder-logos">
+    <img class="funder-logo img-center" src="/img/partners/sfe-logo.png" />
+    <img class="funder-logo img-center" src="/img/partners/coned-logo.png" />
+    <img class="funder-logo img-center" src="/img/partners/robinhood-logo.png" />
+  </div>
+</section>
