@@ -15,7 +15,7 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
 <hr class="heart">
 <section>
     <h2 class="section-heading">Serving Families in Sunset Park</h2>
-    <p>We want every family attending a school in Sunset Park to have free access to the best creative technology classes in the city. To help make this happen, we work with most schools in the greater Sunset Park neighborhood, including P.S. 24, 516, 971, 506, 172, 131, 169, 896, and Charles Dewey. You can also find us at the Sunset Park, Bush Terminal Park, the local Library, Atlas:DIY, Industry City, and other neighborhood centers.</p>
+    <p>We want every family attending a school in Sunset Park to have free access to the best creative technology classes in the city. To help make this happen, we work with most schools in the greater Sunset Park neighborhood, including P.S. 24, 516, 971, 172, 131, 169, 896, and M.S. 136. You can also find us at the Sunset Park, Bush Terminal Park, the local library, the Muslim Community Center, Voces Ciudadanas, and other neighborhood centers.</p>
 </section>
 <hr class="star">
 
@@ -79,7 +79,7 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
 
 <section>
     <h2 class="section-heading">Working In Schools</h2>
-    <p>We 💖 Sunset Park schools.  We have ongoing partnerships with P.S. 24, 516, 971, 503, 172, 131, 169, St. Agatha School, and Charles Dewey.  If you'd like to add your school to this list, please <a href="mailto:hello@sunsetspark.org">contact</a> us.  Each school receives a variety a services and support, including push-in classes, after school clubs, parent workshops, and teacher training around our core subjects: robotics, neuroscience, coding, and computer engineering.</p>
+    <p>We 💖 Sunset Park schools.  We have ongoing partnerships with P.S. 24, 516, 971, 172, 131, 169, 896, and M.S. 136.  If you'd like to add your school to this list, please <a href="mailto:hello@sunsetspark.org">contact</a> us.  Each school receives a variety a services and support, including push-in classes, after school clubs, parent workshops, and teacher training around our core subjects: robotics, neuroscience, coding, and computer engineering.</p>
 </section>
 
 <hr class="heart">
