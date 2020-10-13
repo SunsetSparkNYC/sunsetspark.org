@@ -69,11 +69,11 @@ main {
 }
 
 section {
-    padding: 0 0 1em 0;
+    padding: 0 0 0.5em 0;
 }
 
 section > p {
-    padding: 0.5rem 1em 0 1em;
+    padding: 0.5em 1em;
     max-width: $page-width;
 }
 
@@ -343,7 +343,6 @@ q:before, q:after {
   }
 }
 
-
 .program-item {
     background-color: $spark-white;
     border-left: 0.5rem solid rgb(86, 51, 244);
@@ -421,6 +420,15 @@ a.button:hover, summary.button:hover {
 
 iframe.substack {
   max-width: 100%;
+}
+
+.funder-logos {
+  margin: 0.5em;
+}
+
+.funder-logo {
+  max-width: 100%;
+  margin: 1.5em auto;
 }
 
 // Blog Styles
