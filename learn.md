@@ -21,7 +21,7 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
 
 <section>
     <h2 class="section-heading">Impact</h2>
-    <p>In the 2018-2019 school year, over <b>2,000 students</b> in Sunset Park took part in our robotics, coding, and computer engineering programs. We taught multi-week programs in <b>35 general education classes</b>, <b>15 ICT classes</b>, and <b>3 self-contained classes</b>.</p>
+    <p>With a staff of two, an educator and an engineer, we teach thousands of kids every year. In the 2018-2019 school year, over <b>2,500 students</b> in Sunset Park took part in our robotics, coding, and computer engineering programs. We taught multi-week programs in <b>35 general education classes</b>, <b>15 ICT classes</b>, and <b>3 self-contained classes</b>. Over 100 teachers have attended our free monthly workshops on computational thinking.</p>
 </section>
 <hr class="heart">
 
