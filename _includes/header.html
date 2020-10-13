@@ -5,19 +5,19 @@
         <a class="nav-link logo" href="/">¡Sunset Spark!</a>
       </li>
       <li class="right block">
-        <a class="nav-link {% if page.title == 'Contact' %}active{% endif %}" href="{{ "/contact/" }}">Contact</a>
+        <a class="nav-link {% if page.title == 'Livestreaming' %}active{% endif %}" href="{% link donate.md %}">Donate</a>
       </li>
       <li class="right block">
-        <a class="nav-link {% if page.title == 'About' %}active{% endif %}" href="{{ "/about/" }}">About</a>
+        <a class="nav-link {% if page.title == 'Contact' %}active{% endif %}" href="{% link contact.md %}">Contact</a>
       </li>
       <li class="right block">
-        <a class="nav-link {% if page.title == 'Livestreaming' %}active{% endif %}" href="{{ "/live/" }}">Streaming</a>
+        <a class="nav-link {% if page.title == 'About' %}active{% endif %}" href="{% link about.md %}">About</a>
       </li>
       <li class="right block">
-        <a class="nav-link {% if page.title == 'Wildcard Characters' %}active{% endif %}" href="{{ "/glob/" }}">Blog</a>
+        <a class="nav-link {% if page.title == 'Wildcard Characters' %}active{% endif %}" href="{% link glob/index.html %}">Blog</a>
       </li>
       <li class="right block">
-        <a class="nav-link {% if page.title == 'Learn' %}active{% endif %}" href="{{ "/learn/" }}">Learn</a>
+        <a class="nav-link {% if page.title == 'Learn' %}active{% endif %}" href="{% link learn.md %}">Learn</a>
       </li>
     </ul>
   </nav>
