@@ -4,6 +4,7 @@ author:
     name: Gaelen
     role: Deputy Director of Posting
 title: "We Started a Blog"
+slug: we-started-a-blog
 # category: blogchain series
 # tweet_id:
 ---

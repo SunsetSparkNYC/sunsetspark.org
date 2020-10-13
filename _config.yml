@@ -11,7 +11,7 @@ description: >
 excerpt_separator: <!--more-->
 paginate: 5
 paginate_path: "/glob/page:num/"
-permalink: /glob/:title
+permalink: /glob/:title:output_ext
 
 # Build settings
 env: production
