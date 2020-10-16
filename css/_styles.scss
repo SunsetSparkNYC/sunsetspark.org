@@ -507,12 +507,23 @@ a.post-continue, a.pagination-link, a.bold-link {
 }
 
 .post-metadata {
-  font-size: 100%;
+  font-size: 125%;
   font-weight: $text-bold;
   text-align: center;
   padding-top: 1rem;
 }
 
-.author-role {
-  font-style: italic;
+.post-image-wrap {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    text-align: right;
+    padding-top: 0.25em;
+    font-style: italic;
+  }
 }
