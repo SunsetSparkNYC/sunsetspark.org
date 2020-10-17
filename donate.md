@@ -2,7 +2,7 @@
 layout: default
 title: Donate
 permalink: /donate/
-excerpt: Sunset Spark needs your help. We can't continue our work without donors like you. As a 501(c)3 org, your tax-deductible donation will help us bring more creative technology and science programs to families in Brooklyn.
+excerpt: Donate to Sunset Spark. We can't continue our work without donors like you. Your tax-deductible donation will help us bring more creative tech & science programs to immigrant families in Brooklyn.
 ---
 <section>
   <h2 class="section-heading"><span>&#9829; Support Sunset Spark &#9829;</span></h2>
