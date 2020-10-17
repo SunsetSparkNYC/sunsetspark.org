@@ -486,15 +486,14 @@ a.post-continue, a.pagination-link, a.bold-link {
   margin-bottom: 1.5rem;
 }
 
-.blog-post > p {
-  padding: 0.5rem 1em 0 1em;
-  max-width: $page-width;
-}
-
-.blog-post > .post-content > p {
-  line-height: 1.6;
-  letter-spacing: -0.02em;
-  max-width: $page-width;
+.post-content {
+  p, h1, h2, h3, h4, h5, h6 {
+    padding-top: 0.5rem;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+    max-width: $page-width;
+    margin: 0 auto;
+  }
 }
 
 .post-header-wrap {
@@ -508,12 +507,23 @@ a.post-continue, a.pagination-link, a.bold-link {
 }
 
 .post-metadata {
-  font-size: 100%;
+  font-size: 125%;
   font-weight: $text-bold;
   text-align: center;
   padding-top: 1rem;
 }
 
-.author-role {
-  font-style: italic;
+.post-image-wrap {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    text-align: right;
+    padding-top: 0.25em;
+    font-style: italic;
+  }
 }

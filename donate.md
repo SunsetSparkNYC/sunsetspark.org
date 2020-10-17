@@ -2,12 +2,12 @@
 layout: default
 title: Donate
 permalink: /donate/
-excerpt: Sunset Spark needs your help. We can't continue our work without donors like you. As a 501(c)3 org, your tax-deductible donation will help us bring more creative technology and science programs to families in Brooklyn.
+excerpt: Donate to Sunset Spark. We can't continue our work without donors like you. Your tax-deductible donation will help us bring more creative tech & science programs to immigrant families in Brooklyn.
 ---
 <section>
   <h2 class="section-heading"><span>&#9829; Support Sunset Spark &#9829;</span></h2>
 
-  <p>Sunset Spark needs your help. Like many, 2020 has been a financially difficult year for Sunset Spark. Without donors like you, we will not make it to 2021. As a 501(c)3 org, your tax-deductible donation will help us teach creative technology to families in-person and online and provide much needed tech support and assistance for immigrant families.</p>
+  <p>Sunset Spark needs your help. Like many, 2020 has been a financially difficult year for Sunset Spark. Without donors like you, we will not make it to 2021. As a 501(c)3 org, your tax-deductible donation will help us teach creative technology and weird science to families in-person and online and provide much needed tech support and assistance for immigrant families.</p>
 
   <p>You can donate to us through the <a class="bold-link" href="https://paypal.com/us/fundraiser/charity/1524212">PayPal Giving Fund</a> or using the secure form below. We also accept checks via the mail by sending them to Sunset Spark, P.O. Box 320145, Brooklyn, NY 11232. <a class="bold-link" href="mailto:hello@sunsetspark.org">Reach out</a> if you'd like to give another way.</p>
 
@@ -17,11 +17,9 @@ excerpt: Sunset Spark needs your help. We can't continue our work without donors
     </div>
     <div class="unit half">
       <div class="donorbox-wrap">
-    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
-    <iframe allowpaymentrequest="" frameborder="0" loading="eager" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/support-sunset-spark?default_interval=o" style="max-width: 425px; max-height:none!important" width="100%"></iframe>
-  </div>
-
-
+        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+        <iframe allowpaymentrequest="" frameborder="0" loading="eager" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/support-sunset-spark?default_interval=o" style="max-width: 425px; max-height:none!important" width="100%"></iframe>
+      </div>
     </div>
   </div>
 
