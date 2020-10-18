@@ -4,7 +4,7 @@ title: Learn
 permalink: /learn/
 excerpt: Sunset Spark helps new Americans of all ages use science and technology for fun, family, and the future. We offer free high quality classes for kids, adults and families in a wide variety of modern science and engineering subjects.
 ---
-<div class="jumbotron science-cover">
+<div class="jumbotron computing-alt-cover">
     <!-- <h1></h1> -->
 </div>
 
@@ -26,14 +26,14 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
 <hr class="heart">
 
 <section>
-    <h2 class="section-heading">Past & Current Programs</h2>
+    <h2 class="section-heading">Current Programs</h2>
     <ul>
       <div class="grid">
         <li class="program-listing unit half">
             <article class="program-item">
-                <h3 class="program-title">Game Development</h3>
-                <img src="/img/classes/game-development-day-540.jpg" alt="Game Development" width="100%"/>
-                <p>Students learn how to create their own video games using code. We offer versions of this class for 3rd through 8th grade classes and students.  Younger grades learn how to code using tablet coding environments to create games and interactive stories. For older grades, students learn how to program in JavaScript and use professional tools to develop web and mobile games.</p>
+                <h3 class="program-title">Computing Through Time</h3>
+                <img src="/img/classes/computing-through-time-540.jpg" alt="Computing Through Time" width="100%"/>
+                <p>Learn about the computing—past, present and future—through our free curriculum that mixes computer science with social studies and futurism to teach K-5 kids about computing. Kids learn about mechanism from ancient Greece and the Islamic Golden Age, turn of the century computer scientists, and the future of tech with hands on and coding and unplugged CS activities.</p>
             </article>
         </li>
         <li class="program-listing unit half">
@@ -68,9 +68,9 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
         </li>
         <li class="program-listing unit half">
             <article class="program-item">
-                <h3 class="program-title">Electro Dancing</h3>
-                <img src="/img/classes/computing-for-dancers-540.jpg" alt="Toy Making" width="100%"/>
-                <p>Computer engineering, fashion, and dance collide in our electro dance program.  Students learn different styles of dance along with fashion technology and coding to create interactie, light up dance costumes.</p>
+                <h3 class="program-title">Game Development</h3>
+                <img src="/img/classes/game-development-day-540.jpg" alt="Game Development" width="100%"/>
+                <p>Students learn how to create their own video games using code. We offer versions of this class for 3rd through 8th grade classes and students.  Younger grades learn how to code using tablet coding environments to create games and interactive stories. For older grades, students learn how to program in JavaScript and use professional tools to develop web and mobile games.</p>
             </article>
         </li>
       </div>
