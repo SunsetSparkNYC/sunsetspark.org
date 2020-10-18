@@ -9,7 +9,7 @@ image: /img/posts/make-your-own-site.png
 ---
 We made a website, and you should too. CSed organization's need to practice what they preach and use coding themselves. Our website doesn't look like other organization's sites. I'll admit, it can look a bit unpolished compared to others. Definitely different and unexpected, hopefully in a good way. We're not using one of the top 10 WordPress Themes for not-for-profits. We didn't hire a firm to make it for us either. It's not even a WordPress site. There are a few reasons for that, and I'm writing here to preach about one today.
 
-Sunset Spark's website reflects our values. Not just the words and images we use, but also the way the site was made. I made Sunset Spark's website. Browse through 8 years (!!!) of commits to our codebase on [Github](https://github.com/SunsetSparkNYC/sunsetsparknyc.github.io). As an organization that professes to teach kids about coding (among many other things), it's important that we actually do and share our own coding. Coding isn't just skill that our students should do, we should all do it, and our website is a perfect place make that statement.
+Sunset Spark's website reflects our values. Not just the words and images we use, but also the way the site was made. I made Sunset Spark's website. Browse through 8 years (!!!) of commits to our codebase on [GitHub](https://github.com/SunsetSparkNYC/sunsetsparknyc.github.io). As an organization that professes to teach kids about coding (among many other things), it's important that we actually do and share our own coding. Coding isn't just skill that our students should do, we should all do it, and our website is a perfect place make that statement.
 
 <!--more-->
 
