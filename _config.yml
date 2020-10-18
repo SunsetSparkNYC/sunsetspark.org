@@ -12,6 +12,7 @@ excerpt_separator: <!--more-->
 paginate: 5
 paginate_path: "/glob/page:num/"
 permalink: /glob/:title:output_ext
+site_image: /img/logo-sunset-spark.png
 
 # Build settings
 env: production
