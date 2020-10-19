@@ -33,7 +33,7 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
             <article class="program-item">
                 <h3 class="program-title">Computing Through Time</h3>
                 <img src="/img/classes/computing-through-time-540.jpg" alt="Computing Through Time" width="100%"/>
-                <p>Learn about the computing—past, present and future—through our free curriculum that mixes computer science with social studies and futurism to teach K-5 kids about computing. Kids learn about mechanism from ancient Greece and the Islamic Golden Age, turn of the century computer scientists, and the future of tech with hands on and coding and unplugged CS activities.</p>
+                <p>Learn about computing—past, present and future—through our free curriculum that mixes social studies and futurism to teach K-5 kids about the world of computer science. Kids learn about mechanisms from ancient Greece and the Islamic Golden Age, turn of the century computer scientists, and the future of tech with coding and hands on unplugged CS activities.</p>
             </article>
         </li>
         <li class="program-listing unit half">
