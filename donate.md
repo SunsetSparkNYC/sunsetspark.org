@@ -28,7 +28,7 @@ excerpt: Donate to Sunset Spark. We can't continue our work without donors like 
   <p>Every year we teach over 2,500 students robotics, computer science, game design, and other creative technology and science subjects. Over 95% of our students are first and second generation immigrant families. We run free monthly teacher workshops and family events to help the whole community have fun with science and technology. Your donation helps us keep our doors open.
   </p>
 
-  <img style="padding: 1em 0; max-width: 128px;" class="img-center" src="/img/gs_bronze.svg" />
+  <img style="padding: 1em 0; max-width: 128px;" class="img-center" src="/img/gs_gold.svg" />
 
 </section>
 <section>
