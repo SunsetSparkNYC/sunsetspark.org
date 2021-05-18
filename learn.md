@@ -40,7 +40,7 @@ excerpt: Sunset Spark helps new Americans of all ages use science and technology
             <article class="program-item">
                 <h3 class="program-title">Birding Club</h3>
                 <img src="/img/classes/birding-540.jpg" alt="Birding" width="100%"/>
-                <p>Investigate the birds living and passing through the neighborhood while enjoying the outdoors. Kids explore and inspect nature with high and low tech to learn how to identify birds by appearance, sound, and environment. We combine citizen science and tech to create a kinship with all of nature's inhabitants.</p>
+                <p>Investigate the birds living and passing through the neighborhood while enjoying the outdoors. Kids explore and inspect nature with high and low tech to learn how to identify birds by appearance, sound, and environment. We combine community science and tech to create a kinship with all of nature's inhabitants.</p>
             </article>
         </li>
       </div><div class="grid">

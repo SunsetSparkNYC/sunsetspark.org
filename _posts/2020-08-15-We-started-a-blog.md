@@ -19,7 +19,7 @@ schedules and activities for teachers and parents.
 
 If you want to read more about us, follow us on [Instagram](https://instagram.com/SunsetSparkNYC) or [Twitter](https://twitter.com/SunsetSparkNYC), or subscribe to our [newsletters](/newsletter).
 
-<div class="newsletter-iframe"><iframe class="substack" src="https://sunsetsparknyc.substack.com/embed" loading="eager" width="768" height="100" style="" frameborder="0" scrolling="no"></iframe></div>
+<div class="newsletter-iframe"><iframe class="substack" src="https://newsletter.sunsetspark.org/embed" loading="eager" width="768" height="100" style="" frameborder="0" scrolling="no"></iframe></div>
 
 We also have an [RSS feed](/feed.xml) for feed readers if that's your thing.
 
