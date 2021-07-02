@@ -5,9 +5,11 @@ black==21.6b0
 cffi==1.14.5
 click==8.0.1
 Django==3.2.4
+django-phonenumber-field==5.2.0
 mccabe==0.6.1
 mypy-extensions==0.4.3
 pathspec==0.8.1
+phonenumberslite==8.12.26
 pycodestyle==2.7.0
 pycparser==2.20
 pydocstyle==6.1.1

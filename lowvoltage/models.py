@@ -5,14 +5,27 @@ from django.core.mail import send_mail
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 class AccountManager(UserManager):
     def create_user(self, email=None, password=None, name=None, **extra_fields):
-        return super().create_user(username=uuid.uuid4(), email=email, password=password, name=name, **extra_fields)
+        return super().create_user(
+            username=uuid.uuid4(),
+            email=email,
+            password=password,
+            name=name,
+            **extra_fields
+        )
 
     def create_superuser(self, email=None, password=None, name=None, **extra_fields):
-        return super().create_superuser(username=uuid.uuid4(), email=email, password=password, name=name, **extra_fields)
+        return super().create_superuser(
+            username=uuid.uuid4(),
+            email=email,
+            password=password,
+            name=name,
+            **extra_fields
+        )
 
 
 class AbstractAccount(AbstractBaseUser, PermissionsMixin):
@@ -26,31 +39,32 @@ class AbstractAccount(AbstractBaseUser, PermissionsMixin):
     Do not change this code unless it is to reflect a change made in
     django's AbstractUser.
     """
+
     username = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    email = models.EmailField(_('email address'), blank=True)
+    email = models.EmailField(_("email address"), blank=True)
     is_staff = models.BooleanField(
-        _('staff status'),
+        _("staff status"),
         default=False,
-        help_text=_('Designates whether the user can log into this admin site.'),
+        help_text=_("Designates whether the user can log into this admin site."),
     )
     is_active = models.BooleanField(
-        _('active'),
+        _("active"),
         default=True,
         help_text=_(
-            'Designates whether this user should be treated as active. '
-            'Unselect this instead of deleting accounts.'
+            "Designates whether this user should be treated as active. "
+            "Unselect this instead of deleting accounts."
         ),
     )
-    date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
+    date_joined = models.DateTimeField(_("date joined"), default=timezone.now)
 
     objects = AccountManager()
 
-    EMAIL_FIELD = 'email'
-    USERNAME_FIELD = 'username'
+    EMAIL_FIELD = "email"
+    USERNAME_FIELD = "username"
 
     class Meta:
-        verbose_name = _('account')
-        verbose_name_plural = _('accounts')
+        verbose_name = _("account")
+        verbose_name_plural = _("accounts")
         abstract = True
 
     def clean(self):
@@ -65,25 +79,29 @@ class AbstractAccount(AbstractBaseUser, PermissionsMixin):
 class Account(AbstractAccount):
     username = models.CharField(max_length=50, blank=True, null=True, unique=True)
     name = models.CharField(blank=False, max_length=100)
-    email = models.EmailField(_('email address'), unique=True)
+    email = models.EmailField(_("email address"), unique=True)
     email_verified = models.BooleanField(default=False)
-    phone = models.CharField(max_length=10, unique=True)
+    phone = PhoneNumberField(blank=False, unique=True)
     phone_verified = models.BooleanField(default=False)
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'name']
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["username", "name"]
 
     def __str__(self):
         return "{}".format(self.name)
 
 
+# class AccountProfile(models.Model):
+#     account = models.ForeignKey(Account, on_delete=models.CASCADE)
+
+
 class RelativeType(models.TextChoices):
-    CAREGIVER = 'CG', _('caregiver')
-    PARENT = 'P', _('parent')
-    GRAND_PARENT = 'GP', _('grand parent')
-    SIBLING = 'S', _('sibling')
-    COUSIN = 'CZ', _('cousin')
-    CHILD = 'CH', _('child')
+    CAREGIVER = "CG", _("caregiver")
+    PARENT = "P", _("parent")
+    GRAND_PARENT = "GP", _("grand parent")
+    SIBLING = "S", _("sibling")
+    COUSIN = "CZ", _("cousin")
+    CHILD = "CH", _("child")
 
 
 class FamilyMember(models.Model):
@@ -95,10 +113,10 @@ class FamilyMember(models.Model):
 
 
 class WorkshopType(models.TextChoices):
-    EDUCATOR = 'ED', _('educator')
-    FAMILY = 'FAM', _('family')
-    KID = 'KID', _('kid')
-    TEEN = 'TEEN', _('teen')
+    EDUCATOR = "ED", _("educator")
+    FAMILY = "FAM", _("family")
+    KID = "KID", _("kid")
+    TEEN = "TEEN", _("teen")
 
 
 class Workshop(models.Model):
