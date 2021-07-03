@@ -1,14 +1,33 @@
 import uuid
+
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin, UserManager
 from django.core.mail import send_mail
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
 
 
 class AccountManager(UserManager):
+    def create_user_from_email(
+        self, name, email, email_nfkc, email_nfc, **extra_fields
+    ):
+        """
+        Creates a user with just email address and name
+        """
+        return self.create_user(
+            name=name,
+            email=email,
+            email_nfkc=email_nfkc,
+            email_nfc=email_nfc,
+            **extra_fields
+        )
+
+    def create_user_from_phone(self, name, phone, **extra_fields):
+        return self.create_user(name=name, phone=phone)
+
     def create_user(self, email=None, password=None, name=None, **extra_fields):
         return super().create_user(
             username=uuid.uuid4(),
@@ -31,7 +50,7 @@ class AccountManager(UserManager):
 class AbstractAccount(AbstractBaseUser, PermissionsMixin):
     """
     This model is copied from django's default user to retain admin-compliant
-    permissions. First name and last name were removed, email is no long
+    permissions. First name and last name were removed, email is no longer
     required, and username is a uuid.
 
     Password are required. Other fields are optional.
@@ -77,39 +96,73 @@ class AbstractAccount(AbstractBaseUser, PermissionsMixin):
 
 
 class Account(AbstractAccount):
+    """
+    This is the primary account model. Do not modify the abstract account model.
+    """
+
     username = models.CharField(max_length=50, blank=True, null=True, unique=True)
-    name = models.CharField(blank=False, max_length=100)
+    name = models.CharField(_("email address"), blank=False, max_length=100)
+
     email = models.EmailField(_("email address"), unique=True)
     email_verified = models.BooleanField(default=False)
-    phone = PhoneNumberField(blank=False, unique=True)
+    email_nfkc = models.EmailField(unique=True, null=True, blank=True)
+    email_nfc = models.EmailField(unique=True, null=True, blank=True)
+
+    phone = PhoneNumberField(unique=True, null=True, blank=True)
     phone_verified = models.BooleanField(default=False)
 
-    USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["username", "name"]
+    REQUIRED_FIELDS = ["name"]
 
     def __str__(self):
         return "{}".format(self.name)
+
+    def get_absolute_url(self):
+        return reverse("account-detail")
 
 
 # class AccountProfile(models.Model):
 #     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
 
-class RelativeType(models.TextChoices):
+class RelationshipType(models.TextChoices):
     CAREGIVER = "CG", _("caregiver")
     PARENT = "P", _("parent")
     GRAND_PARENT = "GP", _("grand parent")
     SIBLING = "S", _("sibling")
     COUSIN = "CZ", _("cousin")
-    CHILD = "CH", _("child")
+    AUNTUNCLE = "AU", _("aunt / uncle")
 
 
 class FamilyMember(models.Model):
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
-    relationship = models.CharField(max_length=4, choices=RelativeType.choices)
+    account_relationship = models.CharField(max_length=4, choices=RelationshipType.choices)
     name = models.CharField(blank=False, max_length=48)
     born_on = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return "{} ({}'s {})".format(
+            self.name, self.account.name, self.reverse_relationship
+        )
+
+    @property
+    def reverse_relationship(self):
+        """
+        Returns a string with the expressing the relationship
+        in terms of the account owner.
+        """
+        if self.account_relationship == RelationshipType.CAREGIVER:
+            return _("child")
+        elif self.account_relationship == RelationshipType.PARENT:
+            return _("child")
+        elif self.account_relationship == RelationshipType.GRAND_PARENT:
+            return _("grandchild")
+        elif self.account_relationship == RelationshipType.SIBLING:
+            return _("sibling")
+        elif self.account_relationship == RelationshipType.COUSIN:
+            return _("cousin")
+        elif self.account_relationship == RelationshipType.AUNTUNCLE:
+            return _("niece / nephew")
 
 
 class WorkshopType(models.TextChoices):
@@ -131,16 +184,32 @@ class Workshop(models.Model):
     is_cancelled = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return "{}".format(self.title)
+
+    def get_absolute_url(self):
+        return reverse("workshop-detail", kwargs={"slug": self.slug})
+
+    @property
+    def ends_at(self):
+        return self.starts_at + self.duration
+
 
 class WorkshopSignUp(models.Model):
-    event = models.ForeignKey(Workshop, on_delete=models.CASCADE)
+    workshop = models.ForeignKey(Workshop, on_delete=models.CASCADE)
     attending_acct = models.ForeignKey(Account, on_delete=models.CASCADE)
-    spots_requests = models.PositiveSmallIntegerField()
+    spots_requested = models.PositiveSmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return "{} spots for {}".format(self.spots_requested, self.attending_acct.name)
 
 
 class WorkshopWaitingList(models.Model):
-    event = models.ForeignKey(Workshop, on_delete=models.CASCADE)
+    workshop = models.ForeignKey(Workshop, on_delete=models.CASCADE)
     waiting_acct = models.ForeignKey(Account, on_delete=models.CASCADE)
-    spots_requests = models.PositiveSmallIntegerField()
+    spots_requested = models.PositiveSmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return "{} spots for {}".format(self.spots_requested, self.attenting_acct.name)

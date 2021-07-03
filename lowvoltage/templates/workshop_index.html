@@ -1,0 +1,5 @@
+<ul>
+    {% for workshop in upcoming_workshops %}
+    <li><a href="{{ workshop.get_absolute_url }}">{{ workshop.title }}</a></li>
+    {% endfor %}
+</ul>
