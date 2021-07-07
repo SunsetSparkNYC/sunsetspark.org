@@ -24,7 +24,7 @@ lsi: false
 safe: true
 incremental: false
 
-exclude: ['bin', 'conf', 'Gemfile', 'Gemfile.lock', 'README.md', 'Rakefile']
+exclude: ['services.sunsetspark.org', 'bin', 'conf', 'Gemfile', 'Gemfile.lock', 'README.md', 'Rakefile']
 include: ['.well-known']
 
 paginate_path: "/glob/page:num/"
