@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://www.sunsetspark.org/css/main.css" type="text/css" rel="stylesheet">
+        {% comment %} <style>
+            div.workshop {
+                outline: 4px solid black;
+            }
+        </style> {% endcomment %}
+    </head>
+    <body>
+        <ul>
+            <div class="grid">
+            {% for workshop in upcoming_workshops %}
+            <li class="program-listing unit half">
+                <article class="program-item" id="{{ workshop.slug }}">
+                    <h3 class="program-title"><a href="{{ workshop.get_absolute_url }}">{{ workshop.title }}</a></h3>
+                    <p><span>{{ workshop.starts_at.date }}</span>
+                        <span>{{ workshop.starts_at.time }} to {{ workshop.ends_at.time }}</span>
+                    </p>
+                </article>
+            </li>
+            {% endfor %}
+            </div>
+        </ul>
+    </body>
