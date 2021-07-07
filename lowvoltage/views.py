@@ -14,7 +14,7 @@ class WorkshopIndex(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['upcoming_workshops'] = Workshop.objects.order_by('-starts_at')
+        context['upcoming_workshops'] = Workshop.objects.order_by('starts_at')
         return context
 
 
