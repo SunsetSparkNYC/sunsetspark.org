@@ -1,4 +1,5 @@
 import uuid
+from datetime import datetime, timedelta
 
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin, UserManager
@@ -172,6 +173,11 @@ class WorkshopType(models.TextChoices):
     TEEN = "TEEN", _("teen")
 
 
+class WorkshopManager(models.Manager):
+    def upcoming_workshops(self):
+        return self.filter(is_published=False, starts_at__gte=datetime.now()).order_by('starts_at')
+
+
 class Workshop(models.Model):
     title = models.CharField(blank=False, max_length=100)
     slug = models.SlugField(blank=False)
@@ -184,11 +190,18 @@ class Workshop(models.Model):
     is_cancelled = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
+    objects = WorkshopManager()
+
     def __str__(self):
         return "{}".format(self.title)
 
     def get_absolute_url(self):
         return reverse("workshop-detail", kwargs={"slug": self.slug})
+
+    @property
+    def week(self):
+        start_of_week = self.starts_at - timedelta(days=self.starts_at.weekday(), hours=self.starts_at.hour, minutes=self.starts_at.minute)
+        return start_of_week
 
     @property
     def ends_at(self):

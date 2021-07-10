@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://www.sunsetspark.org/css/main.css" type="text/css" rel="stylesheet">
-        {% comment %} <style>
-            div.workshop {
-                outline: 4px solid black;
-            }
-        </style> {% endcomment %}
-    </head>
-    <body>
-        <ul>
-            <div class="grid">
-            {% for workshop in upcoming_workshops %}
-            <li class="program-listing unit half">
-                <article class="program-item" id="{{ workshop.slug }}">
-                    <h3 class="program-title"><a href="{{ workshop.get_absolute_url }}">{{ workshop.title }}</a></h3>
-                    <p><span>{{ workshop.starts_at.date }}</span>
-                        <span>{{ workshop.starts_at.time }} to {{ workshop.ends_at.time }}</span>
-                    </p>
-                </article>
-            </li>
+{% extends 'base.html' %}
+
+{% block body %}
+{% regroup workshops by week as upcoming_workshops %}
+<main>
+    <div class="workshops">
+        {% for weekly_workshops in upcoming_workshops %}
+        <h2>Week of {{ weekly_workshops.grouper.date }}</h3>
+        <div class="workshops-by-week">
+            {% for workshop in weekly_workshops.list %}
+            <article class="workshop" id="{{ workshop.slug }}">
+                <h3 class="workshop-title">{{ workshop.title }}</h3>
+                <p class="workshop-datetime">{{ workshop.starts_at|date:"l, F g" }}</p>
+                <p class="workshop-datetime">{{ workshop.starts_at|date:"f A"|lower }} to {{ workshop.ends_at|date:"f A"|lower}}</p>
+                <a href="{{ workshop.get_absolute_url }}" class="button">More Info</a>
+            </article>
             {% endfor %}
-            </div>
-        </ul>
-    </body>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

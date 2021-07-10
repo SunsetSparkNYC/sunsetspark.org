@@ -1,0 +1,42 @@
+{% load i18n %}
+{% load l10n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ title }}</title>
+
+  <link rel="stylesheet" href="http://127.0.0.1:4000/css/main.css" type="text/css">
+
+  <meta name="description" content="{{ description }}">
+  <!-- Twitter cards -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="{{ image_url }}">
+  <meta property="og:image:alt" content="{{ image_description }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <!-- QQ / WeChat cards -->
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="image" content="{{ image_url }}">
+  <meta name="description" itemprop="description" content="{{ summary }}">
+
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/my.webmanifest">
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ feed_title }}">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="twitter:dnt" content="on">
+</head>
+
+<body>
+  <!-- Content -->
+  {% block body %}{{ body }}{% endblock %}
+</body>
+</html>

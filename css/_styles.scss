@@ -27,7 +27,7 @@ body {
   line-height:1.4;
   font-size: 110%;
   color: $spark-black;
-  background: $spark-white;
+  background: $spark-beige;
   padding: 0;
 }
 
@@ -533,5 +533,54 @@ a.post-continue, a.pagination-link, a.bold-link {
     text-align: right;
     padding-top: 0.25em;
     font-style: italic;
+  }
+}
+
+
+// Services CSS
+.workshops, .workshop-details {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+
+  > h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.workshop-details {
+  max-width: 768px;
+}
+.workshops-by-week {
+  display: grid;
+  grid-auto-columns: minmax(15rem, auto);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.workshop {
+  background: $spark-white;
+  border: 4px solid $spark-black;
+  padding: 0.5rem;
+  text-align: center;
+
+  .button {
+    line-height: 1;
+    font-size: 100%;
+  }
+}
+
+.workshop-title {
+  text-align: left;
+}
+
+.workshop-datetime {
+  text-align: right;
+  line-height: 1;
+  font-size: 90%;
+  p {
+    margin: 0;
   }
 }

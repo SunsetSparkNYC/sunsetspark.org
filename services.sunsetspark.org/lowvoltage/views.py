@@ -8,13 +8,18 @@ from .models import Workshop
 class AccountDetail(TemplateView):
     template_name = "account_detail.html"
 
+    def signup_or_login():
+        pass
+        # if user exists, send an auth token to sign up
+        # if user does not exist, create user, login for them, send auth token as verification
+
 
 class WorkshopIndex(TemplateView):
     template_name = "workshop_index.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['upcoming_workshops'] = Workshop.objects.order_by('starts_at')
+        context['workshops'] = Workshop.objects.upcoming_workshops()
         return context
 
 
